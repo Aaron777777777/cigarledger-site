@@ -104,7 +104,7 @@ export default function CigarDealsApp({ cigars }: { cigars: Cigar[] }) {
                   </div>
                   <div>
                     <small>EU landed from</small>
-                    <strong>{money(cigar.euFrom)}</strong>
+                    <strong><span className="lockedPrice">£--</span></strong>
                   </div>
                 </div>
               </div>

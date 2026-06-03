@@ -118,7 +118,7 @@ export default function CigarSearchApp({ cigars }: { cigars: Cigar[] }) {
 
             <div className="heroMetric">
               <span>EU landed from</span>
-              <strong>{money(hero.euFrom)}</strong>
+              <strong><span className="lockedPrice">£--</span></strong>
             </div>
           </div>
         </section>
@@ -172,7 +172,7 @@ export default function CigarSearchApp({ cigars }: { cigars: Cigar[] }) {
                 </div>
                 <div>
                   <small>EU landed from</small>
-                  <strong>{money(cigar.euFrom)}</strong>
+                  <strong><span className="lockedPrice">£--</span></strong>
                 </div>
               </div>
             </div>

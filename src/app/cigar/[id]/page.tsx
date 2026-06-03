@@ -63,7 +63,7 @@ export default async function CigarDetailPage({
           </div>
           <div>
             <span>EU landed from</span>
-            <strong>{money(euFrom)}</strong>
+            <strong><span className="lockedPrice">£--</span></strong>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export default async function CigarDetailPage({
           <span>{cigar.lengthMm ? `${cigar.lengthMm}mm` : "Length unknown"}</span>
         </div>
 
-        <p className="safeNote">Full retailer comparison available inside Cigar Ledger.</p>
+        <p className="safeNote">Unlock EU landed prices and full retailer comparison with Cigar Ledger Pro.</p>
       </section>
     </main>
   );
