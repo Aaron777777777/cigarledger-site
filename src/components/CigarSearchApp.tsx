@@ -162,7 +162,7 @@ export default function CigarSearchApp({ cigars }: { cigars: Cigar[] }) {
                   <h3>{cigar.name}</h3>
                   <p>{cigar.brand}</p>
                 </div>
-                <span>›</span>
+                <a className="cardArrow" href={`/cigar/${cigar.id}`}>›</a>
               </div>
 
               <div className="ledgerPrices">
