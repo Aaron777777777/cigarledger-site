@@ -1711,3 +1711,63 @@ body:has(.ledgerApp) .sideNav a[href="/premium"] {
   font-size: 13px;
   font-weight: 800;
 }
+
+.inlineProLink {
+  color: var(--gold);
+  font-weight: 950;
+}
+
+.premiumHero {
+  padding: 26px;
+  border-radius: 34px;
+  border: 1px solid rgba(212,175,55,0.18);
+  background: linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94));
+}
+
+.premiumHero h1 {
+  max-width: none;
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+}
+
+.premiumHero p {
+  margin-top: 18px;
+  color: rgba(244,234,216,0.70);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.premiumButton {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #efd271, #b99022);
+  color: #080705;
+  font-weight: 950;
+}
+
+.premiumGrid {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.premiumGrid div {
+  padding: 22px;
+  border-radius: 26px;
+  border: 1px solid rgba(212,175,55,0.14);
+  background: rgba(255,255,255,0.035);
+}
+
+.premiumGrid h2 {
+  max-width: none;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+}
+
+.premiumGrid p {
+  margin-top: 8px;
+  color: rgba(244,234,216,0.66);
+}

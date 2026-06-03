@@ -74,7 +74,7 @@ export default async function CigarDetailPage({
           <span>{cigar.lengthMm ? `${cigar.lengthMm}mm` : "Length unknown"}</span>
         </div>
 
-        <p className="safeNote">Unlock EU landed prices and full retailer comparison with Cigar Ledger Pro.</p>
+        <p className="safeNote">Unlock EU landed prices and full retailer comparison with <a className="inlineProLink" href="/premium">Cigar Ledger Pro</a>.</p>
       </section>
     </main>
   );
