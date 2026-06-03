@@ -1013,3 +1013,283 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.ledgerApp {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 18px 18px 120px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(239,210,113,0.08), transparent 26%),
+    linear-gradient(180deg, #090909, #0d0d0e, #111);
+}
+
+.heroDealCard {
+  margin-top: 12px;
+  padding: 20px;
+  border-radius: 34px;
+  border: 1px solid rgba(212,175,55,0.22);
+  background:
+    linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94)),
+    radial-gradient(circle at 30% 0%, rgba(212,175,55,0.10), transparent 35%);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.34);
+}
+
+.badgeRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badgeRow span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(212,175,55,0.12);
+  border: 1px solid rgba(212,175,55,0.22);
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.heroLabel,
+.sectionLabel {
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.heroMain {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.heroCigarImage {
+  height: 150px;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+
+.heroCigarImage img {
+  max-width: 88%;
+  max-height: 132px;
+  object-fit: contain;
+}
+
+.brandLine {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.brandLine img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.brandLine h1 {
+  max-width: none;
+  font-size: 26px;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.heroMain p {
+  margin-top: 10px;
+  color: rgba(244,234,216,0.70);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.heroDecision {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr 0.8fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.heroDecision > div,
+.heroMetric {
+  padding: 14px;
+  border-radius: 22px;
+  background: rgba(0,0,0,0.22);
+}
+
+.heroDecision strong {
+  display: block;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.heroDecision span,
+.heroMetric span {
+  display: block;
+  margin-top: 4px;
+  color: rgba(244,234,216,0.62);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.heroMetric strong {
+  font-size: 22px;
+}
+
+.searchPanel {
+  margin-top: 16px;
+}
+
+.searchBox {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  border-radius: 18px;
+  border: 1px solid rgba(212,175,55,0.15);
+  background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+}
+
+.searchBox span {
+  color: var(--gold);
+  text-align: center;
+  font-size: 22px;
+}
+
+.searchBox input {
+  height: 54px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.searchBox input::placeholder {
+  color: rgba(255,255,255,0.38);
+}
+
+.filterRow {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 14px 0 2px;
+}
+
+.filterRow button {
+  white-space: nowrap;
+  border: 1px solid rgba(212,175,55,0.18);
+  background: rgba(255,255,255,0.035);
+  color: rgba(244,234,216,0.74);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 900;
+}
+
+.filterRow button.active {
+  background: rgba(212,175,55,0.16);
+  color: var(--gold);
+}
+
+.sectionLabel {
+  margin: 18px 0 10px;
+}
+
+.ledgerList {
+  display: grid;
+  gap: 12px;
+}
+
+.ledgerCard {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 26px;
+  border: 1px solid rgba(212,175,55,0.14);
+  background: linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94));
+}
+
+.ledgerImage {
+  height: 122px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+
+.ledgerImage img {
+  max-width: 86%;
+  max-height: 108px;
+  object-fit: contain;
+}
+
+.ledgerTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ledgerTitle h3 {
+  font-size: 22px;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.ledgerTitle p {
+  margin-top: 6px;
+  color: rgba(244,234,216,0.68);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ledgerTitle span {
+  color: var(--gold);
+  font-size: 32px;
+}
+
+.ledgerPrices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.ledgerPrices div {
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.24);
+}
+
+.ledgerPrices small {
+  display: block;
+  color: rgba(244,234,216,0.50);
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+.ledgerPrices strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--gold);
+  font-size: 18px;
+}
+
+@media (max-width: 560px) {
+  .heroDecision {
+    grid-template-columns: 1fr;
+  }
+
+  .ledgerPrices {
+    grid-template-columns: 1fr;
+  }
+}
