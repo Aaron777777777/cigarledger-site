@@ -1,40 +1,25 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --bg: #050505;
+  --panel: rgba(255,255,255,0.035);
+  --line: rgba(244,234,216,0.11);
+  --text: #f4ead8;
+  --muted: rgba(244,234,216,0.68);
+  --gold: #efd271;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(239,210,113,0.08), transparent 28%),
+    linear-gradient(180deg, #090806 0%, #030303 48%, #000 100%);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
 }
 
 a {
@@ -42,8 +27,329 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.siteHeader {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.page {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: calc(100vh - 92px);
+  display: grid;
+  align-content: center;
+  padding-bottom: 90px;
+}
+
+.kicker {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+h1 {
+  max-width: 880px;
+  font-size: clamp(48px, 8vw, 104px);
+  line-height: 0.92;
+  letter-spacing: -0.075em;
+}
+
+.heroText,
+.sectionHead p {
+  max-width: 680px;
+  margin-top: 34px;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  padding: 13px 18px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #080705;
+  font-weight: 900;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid rgba(239,210,113,0.34);
+}
+
+.panelGrid,
+.cigarGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding: 0 0 90px;
+}
+
+.panel,
+.cigarCard {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 28px;
+  padding: 28px;
+}
+
+.panel span {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.panel h2,
+.cigarCard h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.panel p,
+.cigarCard p {
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.sectionHead {
+  padding: 90px 0 54px;
+}
+
+.cigarCard {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.imageSlot {
+  width: 86px;
+  height: 86px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  border: 1px solid var(--line);
+  background: rgba(239,210,113,0.045);
+  font-weight: 900;
+}
+
+.cigarCard a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .panelGrid,
+  .cigarGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .siteHeader {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.imageReal {
+  object-fit: cover;
+}
+
+.appShell {
+  width: min(760px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 50px 0 90px;
+}
+
+.appTop {
+  padding: 30px 0 26px;
+}
+
+.appTop h1 {
+  font-size: clamp(42px, 7vw, 72px);
+  letter-spacing: -0.07em;
+  line-height: 0.95;
+}
+
+.appTop p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.searchMock {
+  margin-top: 28px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  color: rgba(244,234,216,0.42);
+  background: rgba(255,255,255,0.045);
+  border: 1px solid var(--line);
+}
+
+.tabs {
+  display: flex;
+  gap: 22px;
+  margin-top: 20px;
+  color: rgba(244,234,216,0.46);
+  font-weight: 800;
+}
+
+.tabs span {
+  padding-bottom: 10px;
+}
+
+.tabs .active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
+.appList {
+  display: grid;
+  gap: 14px;
+}
+
+.appCigarCard {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 18px;
+  padding: 16px;
+  border-radius: 24px;
+  border: 1px solid rgba(244,234,216,0.10);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+
+.thumbWrap {
+  width: 96px;
+  height: 132px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(239,210,113,0.045);
+  border: 1px solid rgba(239,210,113,0.12);
+}
+
+.thumbWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbWrap span {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.cigarInfo {
+  min-width: 0;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.titleRow h2 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.titleRow p {
+  margin-top: 7px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.chevron {
+  color: var(--gold);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.priceRows {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.22);
+  color: rgba(244,234,216,0.70);
+  font-size: 14px;
+}
+
+.priceRow strong {
+  color: var(--gold);
+}
+
+@media (max-width: 560px) {
+  .appCigarCard {
+    grid-template-columns: 74px 1fr;
+  }
+
+  .thumbWrap {
+    width: 74px;
+    height: 104px;
+  }
+
+  .titleRow h2 {
+    font-size: 21px;
   }
 }

@@ -1,66 +1,45 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
+    <main className="page">
+      <section className="hero">
+        <p className="kicker">Cigar Ledger</p>
+        <h1>Compare cigar prices before you buy.</h1>
+        <p className="heroText">
+          A desktop version of Cigar Ledger — built to search cigars, compare UK prices,
+          check EU landed costs and find better value.
+        </p>
+
+        <div className="actions">
+          <a href="/cigars" className="button">Search cigars</a>
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
+            className="button secondary"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            Google Play
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="panelGrid">
+        <div className="panel">
+          <span>01</span>
+          <h2>Search cigars</h2>
+          <p>Browse cigar names, brands and formats from the Cigar Ledger database.</p>
+        </div>
+
+        <div className="panel">
+          <span>02</span>
+          <h2>Compare UK prices</h2>
+          <p>Check retailer pricing before ordering singles or boxes.</p>
+        </div>
+
+        <div className="panel">
+          <span>03</span>
+          <h2>Estimate landed costs</h2>
+          <p>Compare UK pricing against EU landed estimates after duty and VAT.</p>
+        </div>
+      </section>
+    </main>
   );
 }
