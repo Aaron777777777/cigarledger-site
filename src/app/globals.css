@@ -1558,3 +1558,43 @@ body:has(.ledgerApp) .sideNav a[href="/premium"] {
   color: var(--gold);
   font-weight: 950;
 }
+
+.desktopTopBar {
+  width: min(820px, calc(100% - 44px));
+  margin: 0 auto;
+  padding: 26px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.desktopTopBar p {
+  color: rgba(244,234,216,0.46);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.desktopTopBar strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--text);
+  font-size: 20px;
+  letter-spacing: -0.04em;
+}
+
+.desktopTopBar a {
+  color: var(--gold);
+  font-weight: 950;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(239,210,113,0.22);
+}
+
+@media (max-width: 900px) {
+  .desktopTopBar {
+    display: none;
+  }
+}

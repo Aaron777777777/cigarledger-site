@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import DesktopTopBar from "@/components/DesktopTopBar";
 
 export const metadata: Metadata = {
   title: "Cigar Ledger | UK Cigar Price Comparison",
@@ -38,6 +39,7 @@ export default function RootLayout({
           </aside>
 
           <main className="desktopContent">
+            <DesktopTopBar />
             {children}
           </main>
         </div>
