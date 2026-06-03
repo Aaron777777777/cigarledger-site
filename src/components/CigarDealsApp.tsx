@@ -116,8 +116,8 @@ export default function CigarDealsApp({ cigars }: { cigars: Cigar[] }) {
       <nav className="bottomNav">
         <a href="/cigars">⌕<span>Search</span></a>
         <a className="active" href="/deals">♨<span>Deals</span></a>
-        <a href="#">♡<span>Watchlist</span></a>
-        <a href="#">✪<span>Pro</span></a>
+        <a href="/watchlist">♡<span>Watchlist</span></a>
+        <a href="/premium">✪<span>Pro</span></a>
       </nav>
     </main>
   );

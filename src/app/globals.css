@@ -1529,3 +1529,32 @@ body:has(.ledgerApp) .sideNav a[href="/watchlist"],
 body:has(.ledgerApp) .sideNav a[href="/premium"] {
   position: relative;
 }
+
+.emptyState {
+  margin-top: 24px;
+  padding: 26px;
+  border-radius: 28px;
+  border: 1px solid rgba(212,175,55,0.14);
+  background: linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94));
+}
+
+.emptyState h2 {
+  max-width: none;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.emptyState p {
+  margin-top: 12px;
+  color: rgba(244,234,216,0.68);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.emptyState a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--gold);
+  font-weight: 950;
+}

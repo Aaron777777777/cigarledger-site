@@ -9,8 +9,8 @@ export default function PremiumPage() {
       </section>
 
       <section className="emptyState">
-        <h2>Pro page coming next.</h2>
-        <p>For web, this should push users to the mobile app until subscriptions are web-ready.</p>
+        <h2>Pro coming next.</h2>
+        <p>For now, download Cigar Ledger on mobile to use the full app experience.</p>
         <a href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger" target="_blank">
           Download on Google Play →
         </a>
