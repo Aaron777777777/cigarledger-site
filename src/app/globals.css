@@ -1293,3 +1293,239 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.desktopShell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  background:
+    radial-gradient(circle at 25% 0%, rgba(239,210,113,0.07), transparent 26%),
+    linear-gradient(180deg, #050505 0%, #020202 100%);
+}
+
+.sideBar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 30px 24px;
+  border-right: 1px solid rgba(244,234,216,0.08);
+  background: rgba(0,0,0,0.28);
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBrand {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sideNav {
+  display: grid;
+  gap: 10px;
+  margin-top: 48px;
+}
+
+.sideNav a {
+  padding: 14px 16px;
+  border-radius: 18px;
+  color: rgba(244,234,216,0.72);
+  font-weight: 850;
+  background: rgba(255,255,255,0.018);
+  border: 1px solid transparent;
+}
+
+.sideNav a:hover {
+  color: var(--gold);
+  border-color: rgba(239,210,113,0.18);
+  background: rgba(239,210,113,0.045);
+}
+
+.sideCta {
+  margin-top: auto;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(239,210,113,0.16);
+  background: rgba(239,210,113,0.045);
+}
+
+.sideCta p {
+  color: rgba(244,234,216,0.68);
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.sideCta a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-weight: 950;
+}
+
+.desktopContent {
+  min-width: 0;
+}
+
+.desktopContent .ledgerApp,
+.desktopContent .phoneApp {
+  width: min(820px, calc(100% - 44px));
+}
+
+.desktopContent .bottomNav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktopShell {
+    display: block;
+  }
+
+  .sideBar {
+    display: none;
+  }
+
+  .desktopContent .bottomNav {
+    display: grid;
+  }
+}
+
+.sideNav a[href="/cigars"],
+.sideNav a[href="/deals"] {
+  position: relative;
+}
+
+body:has(.ledgerApp) .sideNav a[href="/cigars"],
+body:has(.phoneApp) .sideNav a[href="/deals"] {
+  color: var(--gold);
+  border-color: rgba(239,210,113,0.22);
+  background: rgba(239,210,113,0.07);
+}
+
+.dealsHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px 0 24px;
+}
+
+.dealsHeader h1 {
+  max-width: 520px;
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+}
+
+.dealsHeader > span {
+  padding: 11px 17px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #efd271, #b99022);
+  color: #090806;
+  font-weight: 950;
+}
+
+.weeklyScroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 42%);
+  gap: 14px;
+  overflow-x: auto;
+  padding: 10px 0 28px;
+  scroll-snap-type: x mandatory;
+}
+
+.weeklyScroller::-webkit-scrollbar {
+  display: none;
+}
+
+.weeklyCard {
+  scroll-snap-align: start;
+  min-height: 250px;
+  padding: 14px;
+  border-radius: 24px;
+  border: 1px solid rgba(212,175,55,0.14);
+  background: linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94));
+}
+
+.weeklyBadge,
+.rankBadge {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(212,175,55,0.12);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+}
+
+.weeklyImage {
+  height: 118px;
+  margin: 12px 0;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.04);
+  overflow: hidden;
+}
+
+.weeklyImage img {
+  max-width: 82%;
+  max-height: 104px;
+  object-fit: contain;
+}
+
+.weeklyCard h3 {
+  font-size: 18px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.weeklyCard p {
+  margin-top: 5px;
+  color: rgba(244,234,216,0.68);
+  font-size: 14px;
+}
+
+.weeklyCard strong {
+  display: block;
+  margin-top: 9px;
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.emptyState {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(212,175,55,0.14);
+  background: linear-gradient(135deg, rgba(20,20,22,0.95), rgba(14,14,16,0.94));
+}
+
+.emptyState h2 {
+  max-width: none;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.emptyState p {
+  margin-top: 12px;
+  color: rgba(244,234,216,0.68);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.emptyState a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--gold);
+  font-weight: 950;
+}
+
+body:has(.ledgerApp) .sideNav a[href="/watchlist"],
+body:has(.ledgerApp) .sideNav a[href="/premium"] {
+  position: relative;
+}
