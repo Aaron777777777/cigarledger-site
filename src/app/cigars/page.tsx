@@ -89,6 +89,13 @@ export default async function CigarsPage() {
           );
         })}
       </section>
+    
+      <nav className="bottomNav">
+        <a className="active" href="/cigars">⌕<span>Search</span></a>
+        <a href="/deals">♨<span>Deals</span></a>
+        <a href="#">♡<span>Watchlist</span></a>
+        <a href="#">✪<span>Pro</span></a>
+      </nav>
     </main>
   );
 }

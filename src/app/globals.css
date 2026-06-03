@@ -353,3 +353,663 @@ h1 {
     font-size: 21px;
   }
 }
+
+.phoneApp {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 28px 20px 120px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(239,210,113,0.08), transparent 28%),
+    linear-gradient(180deg, #090806 0%, #050505 48%, #030303 100%);
+}
+
+.appDealHeader {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 0 24px;
+  background: rgba(5,5,5,0.88);
+  backdrop-filter: blur(18px);
+}
+
+.appDealHeader h1 {
+  max-width: none;
+  color: var(--gold);
+  font-size: clamp(34px, 7vw, 52px);
+  line-height: 1;
+  letter-spacing: 0.12em;
+}
+
+.appDealHeader span,
+.appDealHeader button {
+  border: 1px solid rgba(239,210,113,0.26);
+  background: rgba(239,210,113,0.10);
+  color: var(--gold);
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.appDealHeader button {
+  background: linear-gradient(135deg, #efd271, #b99022);
+  color: #0b0905;
+  border: 0;
+}
+
+.dealSection {
+  padding: 34px 0;
+  border-bottom: 1px solid rgba(244,234,216,0.10);
+}
+
+.dealSection h2 {
+  max-width: none;
+  color: var(--gold);
+  font-size: clamp(30px, 6vw, 42px);
+  line-height: 1;
+  letter-spacing: 0.10em;
+  margin-bottom: 28px;
+}
+
+.pickScroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(230px, 42%);
+  gap: 22px;
+  overflow-x: auto;
+  padding: 4px 0 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.pickScroller::-webkit-scrollbar {
+  display: none;
+}
+
+.pickCard {
+  position: relative;
+  scroll-snap-align: start;
+  min-height: 390px;
+  padding: 22px;
+  border-radius: 42px;
+  border: 1px solid rgba(239,210,113,0.20);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(239,210,113,0.075), transparent 34%),
+    rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(239,210,113,0.12);
+  border: 1px solid rgba(239,210,113,0.18);
+  color: var(--gold);
+  font-weight: 950;
+  letter-spacing: 0.07em;
+  font-size: 13px;
+}
+
+.pickImage {
+  height: 170px;
+  margin: 18px 0 26px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.pickImage img {
+  max-width: 78%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.pickCard h3 {
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.pickCard p {
+  margin-top: 8px;
+  color: rgba(244,234,216,0.72);
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pickCard strong {
+  display: block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding-top: 10px;
+}
+
+.dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: rgba(239,210,113,0.24);
+}
+
+.dots .active {
+  background: var(--gold);
+}
+
+.dealList {
+  display: grid;
+  gap: 22px;
+}
+
+.dealCard {
+  padding: 28px;
+  border-radius: 44px;
+  border: 1px solid rgba(239,210,113,0.18);
+  background:
+    radial-gradient(circle at 14% 0%, rgba(239,210,113,0.08), transparent 34%),
+    rgba(255,255,255,0.035);
+}
+
+.dealRank {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+}
+
+.dealBody {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.dealImage {
+  height: 170px;
+  border-radius: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.045);
+  overflow: hidden;
+}
+
+.dealImage img {
+  max-width: 86%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.dealBody h3 {
+  color: white;
+  font-size: clamp(26px, 5vw, 38px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.dealBody p {
+  margin-top: 8px;
+  color: rgba(244,234,216,0.72);
+  font-size: 18px;
+}
+
+.pricePair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.pricePair div {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.24);
+}
+
+.pricePair span {
+  display: block;
+  color: rgba(244,234,216,0.52);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.pricePair strong {
+  display: block;
+  color: var(--gold);
+  font-size: 22px;
+  margin-top: 4px;
+}
+
+.herfCta {
+  margin: 32px 0;
+  padding: 28px;
+  border-radius: 34px;
+  border: 1px solid rgba(239,210,113,0.22);
+  background: rgba(255,255,255,0.04);
+}
+
+.herfCta h2 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.herfCta p {
+  margin-top: 12px;
+  color: rgba(244,234,216,0.66);
+  font-size: 20px;
+}
+
+.herfCta a {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.bottomNav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(760px, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 14px 0 18px;
+  background: rgba(10,10,10,0.94);
+  backdrop-filter: blur(18px);
+  border-top: 1px solid rgba(244,234,216,0.08);
+}
+
+.bottomNav a {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  color: rgba(244,234,216,0.54);
+  font-size: 30px;
+}
+
+.bottomNav a span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bottomNav .active {
+  color: var(--gold);
+}
+
+@media (max-width: 620px) {
+  .appDealHeader {
+    grid-template-columns: 1fr auto;
+  }
+
+  .appDealHeader span {
+    display: none;
+  }
+
+  .pickScroller {
+    grid-auto-columns: 78%;
+  }
+
+  .dealBody {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .dealImage {
+    height: 135px;
+  }
+
+  .pricePair {
+    grid-template-columns: 1fr;
+  }
+}
+
+.phoneApp {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 28px 20px 120px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(239,210,113,0.08), transparent 28%),
+    linear-gradient(180deg, #090806 0%, #050505 48%, #030303 100%);
+}
+
+.appDealHeader {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 0 24px;
+  background: rgba(5,5,5,0.88);
+  backdrop-filter: blur(18px);
+}
+
+.appDealHeader h1 {
+  max-width: none;
+  color: var(--gold);
+  font-size: clamp(34px, 7vw, 52px);
+  line-height: 1;
+  letter-spacing: 0.12em;
+}
+
+.appDealHeader span,
+.appDealHeader button {
+  border: 1px solid rgba(239,210,113,0.26);
+  background: rgba(239,210,113,0.10);
+  color: var(--gold);
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.appDealHeader button {
+  background: linear-gradient(135deg, #efd271, #b99022);
+  color: #0b0905;
+  border: 0;
+}
+
+.dealSection {
+  padding: 34px 0;
+  border-bottom: 1px solid rgba(244,234,216,0.10);
+}
+
+.dealSection h2 {
+  max-width: none;
+  color: var(--gold);
+  font-size: clamp(30px, 6vw, 42px);
+  line-height: 1;
+  letter-spacing: 0.10em;
+  margin-bottom: 28px;
+}
+
+.pickScroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(230px, 42%);
+  gap: 22px;
+  overflow-x: auto;
+  padding: 4px 0 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.pickScroller::-webkit-scrollbar {
+  display: none;
+}
+
+.pickCard {
+  position: relative;
+  scroll-snap-align: start;
+  min-height: 390px;
+  padding: 22px;
+  border-radius: 42px;
+  border: 1px solid rgba(239,210,113,0.20);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(239,210,113,0.075), transparent 34%),
+    rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(239,210,113,0.12);
+  border: 1px solid rgba(239,210,113,0.18);
+  color: var(--gold);
+  font-weight: 950;
+  letter-spacing: 0.07em;
+  font-size: 13px;
+}
+
+.pickImage {
+  height: 170px;
+  margin: 18px 0 26px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.pickImage img {
+  max-width: 78%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.pickCard h3 {
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.pickCard p {
+  margin-top: 8px;
+  color: rgba(244,234,216,0.72);
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pickCard strong {
+  display: block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding-top: 10px;
+}
+
+.dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: rgba(239,210,113,0.24);
+}
+
+.dots .active {
+  background: var(--gold);
+}
+
+.dealList {
+  display: grid;
+  gap: 22px;
+}
+
+.dealCard {
+  padding: 28px;
+  border-radius: 44px;
+  border: 1px solid rgba(239,210,113,0.18);
+  background:
+    radial-gradient(circle at 14% 0%, rgba(239,210,113,0.08), transparent 34%),
+    rgba(255,255,255,0.035);
+}
+
+.dealRank {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+}
+
+.dealBody {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.dealImage {
+  height: 170px;
+  border-radius: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.045);
+  overflow: hidden;
+}
+
+.dealImage img {
+  max-width: 86%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.dealBody h3 {
+  color: white;
+  font-size: clamp(26px, 5vw, 38px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.dealBody p {
+  margin-top: 8px;
+  color: rgba(244,234,216,0.72);
+  font-size: 18px;
+}
+
+.pricePair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.pricePair div {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.24);
+}
+
+.pricePair span {
+  display: block;
+  color: rgba(244,234,216,0.52);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.pricePair strong {
+  display: block;
+  color: var(--gold);
+  font-size: 22px;
+  margin-top: 4px;
+}
+
+.herfCta {
+  margin: 32px 0;
+  padding: 28px;
+  border-radius: 34px;
+  border: 1px solid rgba(239,210,113,0.22);
+  background: rgba(255,255,255,0.04);
+}
+
+.herfCta h2 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.herfCta p {
+  margin-top: 12px;
+  color: rgba(244,234,216,0.66);
+  font-size: 20px;
+}
+
+.herfCta a {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.bottomNav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(760px, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 14px 0 18px;
+  background: rgba(10,10,10,0.94);
+  backdrop-filter: blur(18px);
+  border-top: 1px solid rgba(244,234,216,0.08);
+}
+
+.bottomNav a {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  color: rgba(244,234,216,0.54);
+  font-size: 30px;
+}
+
+.bottomNav a span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bottomNav .active {
+  color: var(--gold);
+}
+
+@media (max-width: 620px) {
+  .appDealHeader {
+    grid-template-columns: 1fr auto;
+  }
+
+  .appDealHeader span {
+    display: none;
+  }
+
+  .pickScroller {
+    grid-auto-columns: 78%;
+  }
+
+  .dealBody {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .dealImage {
+    height: 135px;
+  }
+
+  .pricePair {
+    grid-template-columns: 1fr;
+  }
+}

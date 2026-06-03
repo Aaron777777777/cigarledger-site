@@ -15,15 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body>
-        <header className="siteHeader">
-          <a href="/" className="brand">Cigar Ledger</a>
-          <nav>
-            <a href="/cigars">Cigars</a>
-            <a href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger" target="_blank">
-              Google Play
-            </a>
-          </nav>
-        </header>
         {children}
       </body>
     </html>
