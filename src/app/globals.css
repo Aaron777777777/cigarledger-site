@@ -677,3 +677,52 @@ footer a:hover {
     border-radius: 16px;
   }
 }
+
+/* cleaner SEO page layout */
+.seoArticle {
+  max-width: 1120px;
+}
+
+.seoArticle .lead {
+  max-width: 760px;
+}
+
+.seoArticle section {
+  max-width: none;
+  margin-top: 34px;
+  padding: 26px 28px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: rgba(255,255,255,0.025);
+}
+
+.seoArticle section h2 {
+  font-size: 28px;
+}
+
+.seoArticle section p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.seoArticle section:nth-of-type(1),
+.seoArticle section:nth-of-type(2),
+.seoArticle section:nth-of-type(3) {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(33.333% - 16px);
+  min-height: 210px;
+  margin-right: 18px;
+}
+
+@media (max-width: 900px) {
+  .seoArticle section:nth-of-type(1),
+  .seoArticle section:nth-of-type(2),
+  .seoArticle section:nth-of-type(3) {
+    display: block;
+    width: 100%;
+    min-height: auto;
+    margin-right: 0;
+  }
+}
