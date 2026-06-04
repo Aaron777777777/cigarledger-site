@@ -6,6 +6,7 @@ export default function Home() {
 
         <nav>
           <a href="#products">Apps</a>
+          <a href="#about">About</a>
           <a href="#guides">Guides</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -79,6 +80,22 @@ export default function Home() {
               </a>
             </div>
           </article>
+        </div>
+      </section>
+
+
+      <section id="about" className="section homeSection aboutPlain">
+        <div className="section-head">
+          <span className="kicker">About us</span>
+          <h2>Built to help UK cigar smokers buy smarter.</h2>
+          <p>
+            Cigar Ledger helps smokers compare prices before buying. The cheapest-looking
+            option can change once delivery, duty, VAT and currency conversion are included.
+          </p>
+          <p>
+            Once you have found the right cigar, Herf Station gives the community
+            somewhere to enjoy it together.
+          </p>
         </div>
       </section>
 
