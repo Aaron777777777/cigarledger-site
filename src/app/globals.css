@@ -1269,3 +1269,52 @@ footer a:hover {
   }
 }
 
+
+/* ABOUT PAGE */
+
+.aboutHero {
+  min-height: 0 !important;
+  padding-bottom: 76px !important;
+}
+
+.aboutHero p {
+  max-width: 760px;
+}
+
+
+/* MATCH VANTA LABS HERO RHYTHM */
+
+.standardHero,
+.homeHero,
+.smallHero {
+  min-height: calc(100vh - 90px) !important;
+  min-height: calc(100svh - 90px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding-top: 40px !important;
+  padding-bottom: 80px !important;
+}
+
+.standardHero h1,
+.homeHero h1,
+.smallHero h1 {
+  max-width: 980px;
+}
+
+.standardHero p,
+.homeHero p,
+.smallHero p {
+  max-width: 760px;
+}
+
+@media (max-width: 700px) {
+  .standardHero,
+  .homeHero,
+  .smallHero {
+    min-height: calc(100svh - 72px) !important;
+    padding-top: 30px !important;
+    padding-bottom: 54px !important;
+  }
+}
+
