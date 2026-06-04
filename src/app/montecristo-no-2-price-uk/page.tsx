@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Cheapest Cigars UK | Cigar Ledger",
-  description: "Find the cheapest cigars in the UK before you buy. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
+  title: "Montecristo No. 2 Price UK | Cigar Ledger",
+  description: "Compare Montecristo No. 2 prices in the UK. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
 };
 
 export default function Page() {
@@ -17,8 +17,8 @@ export default function Page() {
 
       <section className="hero smallHero seoPage">
         <span className="kicker">Cigar price guide</span>
-        <h1>Cheapest Cigars UK</h1>
-        <p>Find the cheapest cigars in the UK before you buy.</p>
+        <h1>Montecristo No. 2 Price UK</h1>
+        <p>Compare Montecristo No. 2 prices in the UK.</p>
         <p>
           Cigar prices can vary between retailers, import routes and availability.
           Cigar Ledger is built to help you check prices before spending money.

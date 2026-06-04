@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Cheapest Cigars UK | Cigar Ledger",
-  description: "Find the cheapest cigars in the UK before you buy. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
+  title: "Cohiba Prices UK | Cigar Ledger",
+  description: "Compare Cohiba cigar prices in the UK before buying. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
 };
 
 export default function Page() {
@@ -17,8 +17,8 @@ export default function Page() {
 
       <section className="hero smallHero seoPage">
         <span className="kicker">Cigar price guide</span>
-        <h1>Cheapest Cigars UK</h1>
-        <p>Find the cheapest cigars in the UK before you buy.</p>
+        <h1>Cohiba Prices UK</h1>
+        <p>Compare Cohiba cigar prices in the UK before buying.</p>
         <p>
           Cigar prices can vary between retailers, import routes and availability.
           Cigar Ledger is built to help you check prices before spending money.
