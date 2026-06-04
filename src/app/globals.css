@@ -400,3 +400,17 @@ footer a:hover {
     border-radius: 18px;
   }
 }
+
+.smallHero {
+  min-height: auto;
+  padding: 90px 0 120px;
+}
+
+.smallHero p + p {
+  margin-top: 22px;
+}
+
+.smallHero a:not(.button) {
+  color: var(--gold);
+  font-weight: 850;
+}
