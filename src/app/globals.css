@@ -930,3 +930,98 @@ footer a:hover {
   }
 }
 
+
+/* HOMEPAGE TIGHTENING */
+
+.homeHero {
+  min-height: 0 !important;
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+}
+
+.homeHero p {
+  max-width: 680px;
+}
+
+.homeSection {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+
+.contactForm {
+  max-width: 760px;
+  margin-top: 36px;
+  display: grid;
+  gap: 20px;
+}
+
+.contactFormGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contactForm label {
+  display: grid;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text);
+  font: inherit;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm button {
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .homeHero {
+    padding-top: 46px !important;
+    padding-bottom: 58px !important;
+  }
+
+  .homeSection {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .contactFormGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* FULL FIRST-SCREEN HOMEPAGE HERO */
+
+.homeHero {
+  min-height: calc(100vh - 90px) !important;
+  min-height: calc(100svh - 90px) !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px !important;
+  padding-bottom: 80px !important;
+}
+
+@media (max-width: 700px) {
+  .homeHero {
+    min-height: calc(100svh - 72px) !important;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
