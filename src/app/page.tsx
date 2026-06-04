@@ -88,13 +88,31 @@ export default function Home() {
           <h2>Find prices before you buy.</h2>
         </div>
 
-        <div className="guide-links">
-          <a href="/cohiba-siglo-ii-price-uk">Cohiba Siglo II</a>
-          <a href="/montecristo-no-2-price-uk">Montecristo No. 2</a>
-          <a href="/davidoff-late-hour-price-uk">Davidoff Late Hour</a>
-          <a href="/partagas-serie-d-no-4-price-uk">Partagás D No. 4</a>
-          <a href="/h-upmann-magnum-46-price-uk">H. Upmann Magnum 46</a>
-          <a href="/cheap-cigars-uk">Cheap Cigars UK</a>
+        <div className="guideGrid">
+          <a href="/cohiba-siglo-ii-price-uk">
+            <span>Cuban price guide</span>
+            <strong>Cohiba Siglo II</strong>
+          </a>
+          <a href="/montecristo-no-2-price-uk">
+            <span>Cuban price guide</span>
+            <strong>Montecristo No. 2</strong>
+          </a>
+          <a href="/davidoff-prices-uk">
+            <span>Brand guide</span>
+            <strong>Davidoff Prices UK</strong>
+          </a>
+          <a href="/partagas-serie-d-no-4-price-uk">
+            <span>Cuban price guide</span>
+            <strong>Partagás D No. 4</strong>
+          </a>
+          <a href="/h-upmann-magnum-46-price-uk">
+            <span>Cuban price guide</span>
+            <strong>H. Upmann Magnum 46</strong>
+          </a>
+          <a href="/cheap-cigars-uk">
+            <span>Buying guide</span>
+            <strong>Cheap Cigars UK</strong>
+          </a>
         </div>
       </section>
 

@@ -1168,3 +1168,55 @@ footer a:hover {
   }
 }
 
+
+/* HOMEPAGE GUIDE CARDS */
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.guideGrid a {
+  display: grid;
+  gap: 10px;
+  min-height: 132px;
+  padding: 22px;
+  border: 1px solid rgba(201, 166, 70, 0.16);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.018);
+  text-decoration: none;
+}
+
+.guideGrid a:hover {
+  border-color: rgba(201, 166, 70, 0.42);
+  background: rgba(201, 166, 70, 0.055);
+}
+
+.guideGrid span {
+  color: #c9a646;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.guideGrid strong {
+  color: var(--text);
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+  .guideGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
