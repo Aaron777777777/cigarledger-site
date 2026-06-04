@@ -550,3 +550,20 @@ footer a:hover {
 }
 
 }
+
+/* force SEO app cards side by side */
+.seoPage .seoDownload {
+  display: inline-flex;
+  vertical-align: top;
+  width: calc(50% - 12px);
+  min-height: 180px;
+  margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .seoPage .seoDownload {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+  }
+}
