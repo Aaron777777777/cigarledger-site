@@ -44,24 +44,16 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="secondaryDownload">
-          <p>Found your cigar? Join live cigar lounges with Herf Station.</p>
-          <a
-            className="button"
-            href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station"
-            target="_blank"
-            rel="noopener"
-          >
-            Herf Station Android
-          </a>
-          <a
-            className="button"
-            href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305"
-            target="_blank"
-            rel="noopener"
-          >
-            Herf Station iOS
-          </a>
+        <div className="seoDownload">
+          <img src="/hs.png" alt="Herf Station app icon" />
+          <div>
+            <strong>Herf Station</strong>
+            <span>Found your cigar? Join live cigar lounges with other smokers.</span>
+            <div className="links">
+              <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
+              <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
