@@ -1025,3 +1025,49 @@ footer a:hover {
   }
 }
 
+
+/* TIGHTER CONTACT FORM SIZE */
+
+.contactForm {
+  max-width: 760px !important;
+  margin-top: 36px !important;
+  gap: 20px !important;
+}
+
+.contactFormGrid {
+  gap: 20px !important;
+}
+
+.contactForm input:not([type="hidden"]) {
+  height: 58px !important;
+  min-height: 0 !important;
+  padding: 14px 16px !important;
+}
+
+.contactForm textarea {
+  height: 180px !important;
+  min-height: 180px !important;
+  padding: 14px 16px !important;
+}
+
+@media (max-width: 700px) {
+  .contactForm {
+    margin-top: 30px !important;
+    gap: 18px !important;
+  }
+
+  .contactFormGrid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .contactForm input:not([type="hidden"]) {
+    height: 56px !important;
+  }
+
+  .contactForm textarea {
+    height: 170px !important;
+    min-height: 170px !important;
+  }
+}
+
