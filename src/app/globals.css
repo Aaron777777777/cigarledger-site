@@ -484,12 +484,13 @@ footer a:hover {
 }
 
 .seoAppCards {
-  margin-top: 38px;
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 820px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
 }
+
 
 .seoAppCard {
   display: flex;
@@ -540,7 +541,12 @@ footer a:hover {
 }
 
 @media (max-width: 760px) {
-  .seoAppCards {
-    grid-template-columns: 1fr;
-  }
+.seoAppCards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
+}
+
 }
