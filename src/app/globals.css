@@ -1252,3 +1252,20 @@ footer a:hover {
   }
 }
 
+
+/* CONTACT PAGE */
+
+.contactPageHero {
+  min-height: calc(100vh - 190px);
+}
+
+.contactPageHero .contactForm {
+  margin-top: 42px !important;
+}
+
+@media (max-width: 700px) {
+  .contactPageHero {
+    min-height: 0;
+  }
+}
+

@@ -1,27 +1,76 @@
 export const metadata = {
-  title: "Contact Cigar Ledger | Cigar Price App Support",
-  description: "Contact Cigar Ledger for app support, cigar price questions, partnerships and enquiries.",
+  title: "Contact | Cigar Ledger",
+  description: "Contact Vanta Labs for Cigar Ledger support, cigar price questions or partnership enquiries.",
 };
 
-export default function ContactPage() {
+export default function Contact() {
   return (
     <main className="page">
       <header>
         <a href="/" className="brand">Cigar Ledger</a>
+
         <nav>
           <a href="/">Home</a>
           <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </nav>
       </header>
 
-      <section className="hero smallHero">
+      <section className="hero smallHero contactPageHero">
         <span className="kicker">Contact</span>
         <h1>Questions or support?</h1>
         <p>
-          For Cigar Ledger support, price questions or partnerships, contact Vanta Labs directly.
+          Send a message to Vanta Labs about Cigar Ledger, Herf Station, cigar
+          price data or support.
         </p>
-        <p><a href="mailto:support@vantalabs.co.uk">support@vantalabs.co.uk</a></p>
+
+        <form
+          className="contactForm"
+          action="https://formsubmit.co/support@vantalabs.co.uk"
+          method="post"
+        >
+          <div className="contactFormGrid">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea name="message" rows={6} required />
+          </label>
+
+          <input type="hidden" name="_subject" value="New Cigar Ledger contact page message" />
+          <input type="hidden" name="_url" value="https://www.cigarledger.co.uk/contact" />
+          <input type="hidden" name="_next" value="https://www.cigarledger.co.uk/contact?message=sent" />
+
+          <button className="button" type="submit">
+            Send Message
+          </button>
+        </form>
       </section>
+
+      <footer className="siteFooter">
+        <div>
+          <strong>Cigar Ledger</strong><br />
+          UK cigar price comparison by Vanta Labs.
+        </div>
+
+        <div className="footerLinks">
+          <a href="/cheap-cigars-uk">Cheap cigars UK</a>
+          <a href="/cigar-price-comparison">Compare cigar prices</a>
+          <a href="/cigar-landed-cost-uk">Landed cost guide</a>
+          <a href="/about">About</a>
+        </div>
+
+        <div>© 2026 Vanta Labs</div>
+      </footer>
     </main>
   );
 }
