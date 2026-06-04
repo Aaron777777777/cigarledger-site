@@ -28,15 +28,24 @@ export default function Page() {
           where your next cigar may cost less.
         </p>
 
-        <div className="links">
-          <a
-            className="button"
-            href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
-            target="_blank"
-            rel="noopener"
-          >
-            Download Cigar Ledger
-          </a>
+        <div className="seoDownload">
+          <img src="/cl.png" alt="Cigar Ledger app icon" />
+          <div>
+            <strong>Download Cigar Ledger</strong>
+            <span>Compare UK cigar prices and landed costs before you buy.</span>
+            <a
+              className="button"
+              href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
+              target="_blank"
+              rel="noopener"
+            >
+              Download on Android
+            </a>
+          </div>
+        </div>
+
+        <div className="secondaryDownload">
+          <p>Found your cigar? Join live cigar lounges with Herf Station.</p>
           <a
             className="button"
             href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station"
