@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cigar Ledger | UK Cigar Price Comparison",
+  title: "Cigar Ledger | UK Cigar Price Comparison & EU Import Costs",
   description:
-    "Compare UK cigar prices, estimate EU landed costs and find cheaper cigars before you buy.",
+    "Find the cheapest cigars before you buy. Compare UK cigar prices, estimate EU import and landed costs, then smoke with others on Herf Station.",
 };
 
 export default function RootLayout({
