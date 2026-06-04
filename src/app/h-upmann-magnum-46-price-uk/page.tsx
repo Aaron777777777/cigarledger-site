@@ -28,7 +28,8 @@ export default function Page() {
           where your next cigar may cost less.
         </p>
 
-        <div className="seoDownload">
+        <div className="seoDownloadGrid">
+<div className="seoDownload">
           <img src="/cl.png" alt="Cigar Ledger app icon" />
           <div>
             <strong>Download Cigar Ledger</strong>
@@ -43,8 +44,7 @@ export default function Page() {
             </a>
           </div>
         </div>
-
-        <div className="seoDownload">
+<div className="seoDownload">
           <img src="/hs.png" alt="Herf Station app icon" />
           <div>
             <strong>Herf Station</strong>
@@ -54,6 +54,7 @@ export default function Page() {
               <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </main>

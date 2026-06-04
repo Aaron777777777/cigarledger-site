@@ -567,3 +567,23 @@ footer a:hover {
     margin-right: 0;
   }
 }
+
+.seoDownloadGrid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  max-width: 980px;
+}
+
+.seoDownloadGrid .seoDownload {
+  margin-top: 0;
+  max-width: none;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .seoDownloadGrid {
+    grid-template-columns: 1fr;
+  }
+}
