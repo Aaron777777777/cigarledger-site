@@ -482,3 +482,65 @@ footer a:hover {
     padding: 22px;
   }
 }
+
+.seoAppCards {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 820px;
+}
+
+.seoAppCard {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.014));
+}
+
+.seoAppCard img {
+  width: 68px;
+  height: 68px;
+  border-radius: 17px;
+  object-fit: cover;
+  box-shadow: 0 18px 34px rgba(0,0,0,0.42);
+}
+
+.seoAppCard strong,
+.seoAppCard span {
+  display: block;
+}
+
+.seoAppCard strong {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.seoAppCard span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.seoAppCard .button {
+  margin-top: 14px;
+}
+
+.miniLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.miniLinks .button {
+  min-width: 96px;
+}
+
+@media (max-width: 760px) {
+  .seoAppCards {
+    grid-template-columns: 1fr;
+  }
+}
