@@ -1397,3 +1397,91 @@ footer a:hover {
   margin-top: 18px;
 }
 
+
+/* FIX INDIVIDUAL CIGAR SEO PAGE ORDER */
+
+.seoArticle .relatedLinks {
+  order: 7 !important;
+  grid-column: 1 / -1;
+  margin-top: 34px !important;
+}
+
+.seoArticle > section {
+  order: 6 !important;
+}
+
+
+/* FORCE INDIVIDUAL CIGAR PAGES INTO CORRECT ORDER */
+
+.cigarDetailPage {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+.cigarDetailPage .kicker,
+.cigarDetailPage h1,
+.cigarDetailPage .lead,
+.cigarDetailPage .seoDownloadGrid,
+.cigarDetailPage > section,
+.cigarDetailPage .relatedLinks {
+  order: unset !important;
+}
+
+.cigarDetailPage .seoDownloadGrid {
+  margin-top: 38px !important;
+}
+
+.cigarDetailPage > section {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin-top: 24px !important;
+}
+
+.cigarDetailPage .relatedLinks {
+  width: 100% !important;
+  max-width: 920px !important;
+  margin-top: 38px !important;
+  padding-top: 28px !important;
+}
+
+
+/* INDIVIDUAL CIGAR INFO CARDS SIDE BY SIDE */
+
+.cigarDetailPage {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+
+.cigarDetailPage .kicker,
+.cigarDetailPage h1,
+.cigarDetailPage .lead,
+.cigarDetailPage .seoDownloadGrid,
+.cigarDetailPage .relatedLinks {
+  grid-column: 1 / -1 !important;
+}
+
+.cigarDetailPage > section {
+  grid-column: auto !important;
+  width: auto !important;
+  max-width: none !important;
+  min-height: 210px !important;
+  margin-top: 24px !important;
+}
+
+.cigarDetailPage .relatedLinks {
+  margin-top: 34px !important;
+}
+
+@media (max-width: 900px) {
+  .cigarDetailPage {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cigarDetailPage > section {
+    grid-column: 1 / -1 !important;
+    min-height: 0 !important;
+  }
+}
+

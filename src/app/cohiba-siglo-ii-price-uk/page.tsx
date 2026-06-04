@@ -15,7 +15,7 @@ export default function Page() {
         </nav>
       </header>
 
-      <section className="hero smallHero seoPage seoArticle">
+      <section className="hero smallHero seoPage seoArticle cigarDetailPage">
         <span className="kicker">Cigar price guide</span>
         <h1>Cohiba Siglo II Price UK</h1>
         <p className="lead">
@@ -80,6 +80,7 @@ export default function Page() {
         </section>
 
 
+
         <div className="relatedLinks">
           <span>Related guides</span>
           <a href="/cheap-cigars-uk">Cheap Cigars UK</a>
@@ -87,7 +88,6 @@ export default function Page() {
           <a href="/cigar-landed-cost-uk">Cigar landed cost UK</a>
           <a href="/cuban-cigar-prices-uk">Cuban cigar prices UK</a>
         </div>
-
       </section>
     </main>
   );
