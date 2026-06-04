@@ -156,10 +156,17 @@ export default function Home() {
         </form>
       </section>
 
-      <footer>
+      <footer className="siteFooter">
         <div>
           <strong>Cigar Ledger</strong><br />
           UK cigar price comparison by Vanta Labs.
+        </div>
+
+        <div className="footerLinks">
+          <a href="/cheap-cigars-uk">Cheap cigars UK</a>
+          <a href="/cigar-price-comparison">Compare cigar prices</a>
+          <a href="/cigar-landed-cost-uk">Landed cost guide</a>
+          <a href="/about">About</a>
         </div>
 
         <div>© 2026 Vanta Labs</div>

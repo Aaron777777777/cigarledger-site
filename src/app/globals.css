@@ -1220,3 +1220,35 @@ footer a:hover {
   }
 }
 
+
+/* FOOTER LINKS */
+
+.siteFooter {
+  display: grid;
+  grid-template-columns: 1.2fr 1.6fr auto;
+  gap: 28px;
+  align-items: start;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+.footerLinks a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footerLinks a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 800px) {
+  .siteFooter {
+    grid-template-columns: 1fr;
+  }
+}
+
