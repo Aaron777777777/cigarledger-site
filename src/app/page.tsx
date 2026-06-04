@@ -107,7 +107,7 @@ export default function Home() {
 
         <form
           className="contactForm"
-          action="PASTE_YOUR_REAL_FORMSPREE_ENDPOINT_HERE"
+          action="https://formsubmit.co/support@vantalabs.co.uk"
           method="post"
         >
           <div className="contactFormGrid">
@@ -126,6 +126,11 @@ export default function Home() {
             Message
             <textarea name="message" rows={6} required />
           </label>
+
+          <input type="hidden" name="_subject" value="New Cigar Ledger website message" />
+          <input type="hidden" name="_url" value="https://www.cigarledger.co.uk/" />
+          <input type="hidden" name="_next" value="https://www.cigarledger.co.uk/?message=sent" />
+          
 
           <button className="button" type="submit">
             Send Message
