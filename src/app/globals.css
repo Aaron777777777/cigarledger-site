@@ -1318,3 +1318,34 @@ footer a:hover {
   }
 }
 
+
+/* KEEP SEO PAGES COMPACT DESPITE GLOBAL HERO SIZE */
+
+.seoPage,
+.seoArticle {
+  min-height: 0 !important;
+  justify-content: flex-start !important;
+  padding-top: 72px !important;
+  padding-bottom: 90px !important;
+}
+
+.seoPage h1,
+.seoArticle h1 {
+  max-width: 900px;
+}
+
+.seoPage .lead,
+.seoArticle .lead,
+.seoPage p,
+.seoArticle p {
+  max-width: 720px;
+}
+
+@media (max-width: 700px) {
+  .seoPage,
+  .seoArticle {
+    padding-top: 52px !important;
+    padding-bottom: 72px !important;
+  }
+}
+
