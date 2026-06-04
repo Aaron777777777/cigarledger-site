@@ -1071,3 +1071,28 @@ footer a:hover {
   }
 }
 
+
+/* HOMEPAGE HERO CTA */
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.ghostButton {
+  background: transparent !important;
+}
+
+@media (max-width: 700px) {
+  .heroActions {
+    margin-top: 28px;
+  }
+
+  .heroActions .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

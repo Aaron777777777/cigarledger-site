@@ -85,7 +85,7 @@ export default function Home() {
       <section id="guides" className="section homeSection">
         <div className="section-head">
           <span className="kicker">Popular price guides</span>
-          <h2>Useful cigar searches.</h2>
+          <h2>Find prices before you buy.</h2>
         </div>
 
         <div className="guide-links">
