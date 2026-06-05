@@ -1606,3 +1606,46 @@ footer a:hover {
     grid-column: auto !important;
   }
 }
+
+/* FORCE SIMPLE VANTA-STYLE FOOTER */
+.siteFooter {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 48px 24px 56px !important;
+  border-top: 1px solid rgba(255,255,255,0.1) !important;
+  display: grid !important;
+  grid-template-columns: 1.2fr 2fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+  color: rgba(255,255,255,0.52) !important;
+}
+
+.siteFooter .footerLinks {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 12px 26px !important;
+  align-items: flex-start !important;
+}
+
+.siteFooter .footerLinks a {
+  color: rgba(255,255,255,0.58) !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  white-space: nowrap !important;
+}
+
+.siteFooter strong {
+  color: rgba(255,255,255,0.72) !important;
+}
+
+.footerCopyright {
+  margin-top: 34px !important;
+}
+
+@media (max-width: 900px) {
+  .siteFooter {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+}
