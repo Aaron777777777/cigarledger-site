@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export const metadata = {
   title: "Cigar Landed Cost UK | Cigar Ledger",
   description: "Estimate cigar landed costs in the UK. Compare final cigar prices after import costs, duty, VAT and delivery.",
@@ -13,6 +15,7 @@ export default function Page() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <article className="seoArticle">

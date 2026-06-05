@@ -1881,3 +1881,111 @@ footer a:hover {
     margin-top: 18px;
   }
 }
+
+/* Vanta-style mobile burger */
+.vanta-mobile-wrap {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: none !important;
+  }
+
+  .vanta-mobile-wrap {
+    display: block;
+    margin-left: auto;
+  }
+
+  .vanta-burger {
+    width: 42px;
+    height: 38px;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: rgba(255, 255, 255, 0.04);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 11px;
+  }
+
+  .vanta-burger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 99px;
+    background: #d4af37;
+  }
+
+  .vanta-mobile-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: min(280px, calc(100vw - 32px));
+    z-index: 999;
+    display: grid;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 22px;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    background: rgba(9, 9, 9, 0.98);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  }
+
+  .vanta-mobile-menu a {
+    padding: 13px 14px;
+    border-radius: 14px;
+    color: #f7efe2;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+/* Vanta-style compact footer */
+.vanta-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 56px;
+  padding: 34px 20px 38px;
+  color: rgba(255,255,255,0.58);
+}
+
+.vanta-footer strong {
+  display: block;
+  color: #f7efe2;
+  margin-bottom: 8px;
+}
+
+.vanta-footer p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.vanta-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  margin-top: 20px;
+}
+
+.vanta-footer a {
+  color: rgba(255,255,255,0.62);
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .vanta-footer {
+    margin-top: 32px;
+    padding: 26px 20px 30px;
+  }
+
+  .vanta-footer nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 18px;
+  }
+}

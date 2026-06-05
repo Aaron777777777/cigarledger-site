@@ -1,3 +1,4 @@
+import MobileMenu from "@/components/MobileMenu";
 import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "About Cigar Ledger | UK Cigar Price Comparison",
@@ -15,6 +16,7 @@ export default function AboutPage() {
           <a href="/">Home</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero standardHero">

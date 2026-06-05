@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 import { getCigars } from "@/lib/cigars";
 
 export const dynamic = "force-dynamic";

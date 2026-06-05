@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export const metadata = {
   title: "Partagás Serie D No. 4 Price UK | Cigar Ledger",
   description: "Check Partagás Serie D No. 4 prices in the UK. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
@@ -13,6 +15,7 @@ export default function Page() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero smallHero seoPage seoArticle cigarDetailPage">

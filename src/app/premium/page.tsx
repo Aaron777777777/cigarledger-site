@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export default function PremiumPage() {
   return (
     <main className="ledgerApp">

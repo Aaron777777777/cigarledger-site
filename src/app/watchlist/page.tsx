@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export default function WatchlistPage() {
   return (
     <main className="ledgerApp">

@@ -1,3 +1,4 @@
+import MobileMenu from "@/components/MobileMenu";
 import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Contact | Cigar Ledger",
@@ -15,6 +16,7 @@ export default function Contact() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero smallHero contactPageHero">

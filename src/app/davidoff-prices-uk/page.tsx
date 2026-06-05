@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export const metadata = {
   title: "Davidoff Prices UK | Cigar Ledger",
   description: "Compare Davidoff cigar prices in the UK. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
@@ -13,6 +15,7 @@ export default function Page() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero smallHero seoPage">

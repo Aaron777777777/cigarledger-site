@@ -1,3 +1,4 @@
+import MobileMenu from "@/components/MobileMenu";
 import SiteFooter from "@/components/SiteFooter";
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           <a href="#guides">Guides</a>
           <a href="#contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero homeHero">

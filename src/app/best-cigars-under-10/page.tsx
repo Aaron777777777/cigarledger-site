@@ -1,3 +1,5 @@
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export const metadata = {
   title: "Best Cigars Under £10 UK | Cigar Ledger",
   description: "Explore affordable cigars under £10 and compare prices before buying. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
@@ -13,6 +15,7 @@ export default function Page() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
+        <MobileMenu />
       </header>
 
       <section className="hero smallHero seoPage">
