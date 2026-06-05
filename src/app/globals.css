@@ -2503,3 +2503,33 @@ footer a:hover {
     max-width: 96% !important;
   }
 }
+
+/* TRUE Vanta mobile alignment: remove double padding */
+@media (max-width: 760px) {
+  header {
+    padding: 22px 0 18px !important;
+  }
+
+  .hero.homeHero {
+    padding: 0 0 44px !important;
+    min-height: calc(100vh - 72px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    transform: translateY(-36px) !important;
+  }
+
+  .hero.homeHero h1 {
+    font-size: 48px !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.065em !important;
+    max-width: 860px !important;
+  }
+
+  .hero.homeHero p {
+    margin-top: 28px !important;
+    font-size: 19px !important;
+    line-height: 1.65 !important;
+    max-width: 96% !important;
+  }
+}
