@@ -2562,3 +2562,37 @@ footer a:hover {
     margin: 0 !important;
   }
 }
+
+/* Match Vanta Labs mobile hero exactly */
+@media (max-width: 760px) {
+  .hero.homeHero {
+    min-height: calc(100vh - 72px) !important;
+    padding: 0 28px 44px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    transform: translateY(-36px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero.homeHero .kicker {
+    margin-bottom: 18px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.22em !important;
+  }
+
+  .hero.homeHero h1 {
+    font-size: 48px !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.065em !important;
+    margin: 0 !important;
+    max-width: 860px !important;
+  }
+
+  .hero.homeHero p {
+    margin-top: 28px !important;
+    font-size: 19px !important;
+    line-height: 1.65 !important;
+    max-width: 96% !important;
+  }
+}
