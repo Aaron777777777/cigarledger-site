@@ -2446,3 +2446,36 @@ footer a:hover {
     line-height: 1.4 !important;
   }
 }
+
+/* Mobile horizontal overflow fix - do not touch footer */
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .homeHero,
+  .section,
+  .homeSection {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero h1,
+  .homeHero h1,
+  .section h2,
+  .homeSection h2,
+  .hero p,
+  .homeHero p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
