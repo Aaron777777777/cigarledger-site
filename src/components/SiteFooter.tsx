@@ -10,7 +10,6 @@ export default function SiteFooter() {
       </div>
 
       <div className="footerLinks">
-        <Link href="/">Home</Link>
         <Link href="/cigar-price-comparison">Compare prices</Link>
         <Link href="/cheap-cigars-uk">Cheap cigars</Link>
         <Link href="/cigars">Cigars</Link>

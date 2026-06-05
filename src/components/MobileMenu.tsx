@@ -10,7 +10,9 @@ export default function MobileMenu() {
         aria-label="Open menu"
         onClick={() => document.body.classList.toggle("menu-open")}
       >
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div className="mobile-menu">

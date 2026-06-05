@@ -2093,3 +2093,101 @@ footer a:hover {
     gap: 7px;
   }
 }
+
+/* FINAL OVERRIDE: match Vanta Labs mobile header/footer exactly */
+@media (max-width: 760px) {
+  header {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  header nav {
+    display: none !important;
+  }
+
+  .menu-button {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 52px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: transparent !important;
+  }
+
+  .menu-button span {
+    display: block !important;
+    width: 34px !important;
+    height: 5px !important;
+    border-radius: 0 !important;
+    background: #d6ad55 !important;
+  }
+
+  .mobile-menu {
+    display: none !important;
+    position: absolute !important;
+    top: 66px !important;
+    left: 24px !important;
+    right: 24px !important;
+    z-index: 999 !important;
+    padding: 18px !important;
+    border-radius: 0 !important;
+    border: 1px solid rgba(214,173,85,0.18) !important;
+    background: rgba(10,9,6,0.98) !important;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.6) !important;
+  }
+
+  .menu-open .mobile-menu {
+    display: grid !important;
+    gap: 8px !important;
+  }
+
+  .mobile-menu a {
+    padding: 12px 4px !important;
+    border-radius: 0 !important;
+    color: #f7efe2 !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+  }
+
+  .siteFooter {
+    display: block !important;
+    max-width: none !important;
+    margin: 64px 28px 0 !important;
+    padding: 48px 48px 42px !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+    color: rgba(255,255,255,0.55) !important;
+    font-size: 24px !important;
+    line-height: 1.75 !important;
+  }
+
+  .siteFooter strong {
+    color: #f7efe2 !important;
+    font-size: 24px !important;
+  }
+
+  .footerLinks {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 18px 34px !important;
+    margin-top: 34px !important;
+  }
+
+  .footerLinks a {
+    color: rgba(255,255,255,0.55) !important;
+    text-decoration: none !important;
+    font-size: 24px !important;
+  }
+
+  .siteFooter > div:last-child {
+    margin-top: 34px !important;
+  }
+}
