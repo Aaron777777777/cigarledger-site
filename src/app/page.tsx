@@ -141,6 +141,9 @@ export default function Home() {
           <span className="kicker">Contact</span>
           <h2>Questions or support?</h2>
           <p>Send a message to Vanta Labs.</p>
+          <p style={{ opacity: 0.7, marginTop: "12px" }}>
+            support@vantalabs.co.uk
+          </p>
         </div>
 
         <form
