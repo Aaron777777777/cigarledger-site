@@ -2318,3 +2318,49 @@ footer a:hover {
     margin-top: 16px !important;
   }
 }
+
+/* Desktop footer: match Vanta Labs single-row layout */
+@media (min-width: 761px) {
+  .siteFooter {
+    max-width: 1200px !important;
+    margin: 72px auto 0 !important;
+    padding: 32px 24px 40px !important;
+    display: grid !important;
+    grid-template-columns: 1.4fr 1.6fr auto !important;
+    align-items: start !important;
+    gap: 48px !important;
+  }
+
+  .footerLinks {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 28px !important;
+    margin-top: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .siteFooter > div:last-child {
+    margin-top: 0 !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Mobile: keep clean and wrapped */
+@media (max-width: 760px) {
+  .siteFooter {
+    display: block !important;
+    margin: 42px 28px 0 !important;
+    padding: 30px 0 30px !important;
+  }
+
+  .footerLinks {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px 24px !important;
+    margin-top: 22px !important;
+  }
+
+  .siteFooter > div:last-child {
+    margin-top: 22px !important;
+  }
+}
