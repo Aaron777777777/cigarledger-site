@@ -1008,8 +1008,8 @@ footer a:hover {
 /* FULL FIRST-SCREEN HOMEPAGE HERO */
 
 .homeHero {
-  min-height: calc(100vh - 90px) !important;
-  min-height: calc(100svh - 90px) !important;
+  min-height: calc(78vh - 90px) !important;
+  min-height: calc(78svh - 90px) !important;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -1019,7 +1019,7 @@ footer a:hover {
 
 @media (max-width: 700px) {
   .homeHero {
-    min-height: calc(100svh - 72px) !important;
+    min-height: calc(78svh - 72px) !important;
     padding-top: 30px !important;
     padding-bottom: 50px !important;
   }
@@ -1287,8 +1287,8 @@ footer a:hover {
 .standardHero,
 .homeHero,
 .smallHero {
-  min-height: calc(100vh - 90px) !important;
-  min-height: calc(100svh - 90px) !important;
+  min-height: calc(78vh - 90px) !important;
+  min-height: calc(78svh - 90px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -1312,7 +1312,7 @@ footer a:hover {
   .standardHero,
   .homeHero,
   .smallHero {
-    min-height: calc(100svh - 72px) !important;
+    min-height: calc(78svh - 72px) !important;
     padding-top: 30px !important;
     padding-bottom: 54px !important;
   }
