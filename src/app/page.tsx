@@ -89,12 +89,16 @@ export default function Home() {
           <span className="kicker">About us</span>
           <h2>Built to help UK cigar smokers buy smarter.</h2>
           <p>
-            Cigar Ledger helps smokers compare prices before buying. The cheapest-looking
-            option can change once delivery, duty, VAT and currency conversion are included.
+            Cigar Ledger was built after seeing how expensive cigars can be in the UK
+            and wanting to solve a real-world problem. Finding the cheapest cigar is
+            not always as simple as comparing shelf prices. Once delivery costs, duty,
+            VAT and currency conversion are included, the cheapest-looking option can
+            quickly become one of the most expensive.
           </p>
           <p>
-            Once you have found the right cigar, Herf Station gives the community
-            somewhere to enjoy it together.
+            Our goal is simple: help smokers make better buying decisions, save money,
+            spend less time comparing websites, and connect with cigar enthusiasts
+            around the world through the wider Vanta Labs ecosystem.
           </p>
         </div>
       </section>
