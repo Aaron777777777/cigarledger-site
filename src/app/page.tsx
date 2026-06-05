@@ -182,9 +182,8 @@ export default function Home() {
         </div>
 
         <div className="footerLinks">
-          <a href="/cheap-cigars-uk">Cheap cigars</a>
           <a href="/cigar-price-comparison">Compare prices</a>
-          <a href="/cigar-landed-cost-uk">Landed cost</a>
+          <a href="/cheap-cigars-uk">Cheap cigars</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
           <a href="/privacy">Privacy</a>
