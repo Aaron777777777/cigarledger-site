@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Contact | Cigar Ledger",
   description: "Contact Vanta Labs for Cigar Ledger support, cigar price questions or partnership enquiries.",
@@ -56,21 +57,7 @@ export default function Contact() {
         </form>
       </section>
 
-      <footer className="siteFooter">
-        <div>
-          <strong>Cigar Ledger</strong><br />
-          UK cigar price comparison by Vanta Labs.
-        </div>
-
-        <div className="footerLinks">
-          <a href="/cheap-cigars-uk">Cheap cigars UK</a>
-          <a href="/cigar-price-comparison">Compare cigar prices</a>
-          <a href="/cigar-landed-cost-uk">Landed cost guide</a>
-          <a href="/about">About</a>
-        </div>
-
-        <div>© 2026 Vanta Labs</div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

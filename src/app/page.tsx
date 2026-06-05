@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/SiteFooter";
 export default function Home() {
   return (
     <main className="page">
@@ -179,23 +180,7 @@ export default function Home() {
         </form>
       </section>
 
-      <footer className="siteFooter">
-        <div>
-          <strong>Cigar Ledger</strong><br />
-          UK cigar price comparison by Vanta Labs.<br />
-          Built for cigar smokers who check before they buy.
-          <div className="footerCopyright">© 2026 Vanta Labs</div>
-        </div>
-
-        <div className="footerLinks">
-          <a href="/cigar-price-comparison">Compare prices</a>
-          <a href="/cheap-cigars-uk">Cheap cigars</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

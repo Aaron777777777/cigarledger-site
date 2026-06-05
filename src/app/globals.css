@@ -1755,3 +1755,66 @@ footer a:hover {
     color: rgba(255, 255, 255, 0.62) !important;
   }
 }
+
+/* Cigar Ledger shared footer + mobile tidy */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin-top: 48px;
+  padding: 34px 20px 38px;
+}
+
+.footer-inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.footer-brand {
+  margin-bottom: 18px;
+}
+
+.footer-brand strong {
+  display: block;
+  color: #f7efe2;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  margin: 0 0 6px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.45;
+}
+
+.footer-copy {
+  margin: 20px 0 0;
+  color: rgba(255,255,255,0.42);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 26px;
+  margin-top: 22px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.62);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #d4af37;
+}
+
+@media (max-width: 760px) {
+  .site-footer {
+    margin-top: 34px;
+    padding: 28px 20px 34px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+  }
+}
