@@ -14,8 +14,6 @@ export default function SiteFooter() {
         <Link href="/about">About</Link>
         <Link href="/privacy">Privacy</Link>
         <Link href="/terms">Terms</Link>
-        <Link href="/privacy">Privacy</Link>
-        <Link href="/terms">Terms</Link>
       </div>
 
       <div>© 2026 Vanta Labs</div>
