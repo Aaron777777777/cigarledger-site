@@ -2292,3 +2292,29 @@ footer a:hover {
     font-size: 14px !important;
   }
 }
+
+/* Match Vanta footer spacing */
+@media (max-width: 760px) {
+
+  .siteFooter {
+    margin-top: 24px !important;
+    padding-top: 24px !important;
+  }
+
+  /* kill mystery spacing above footer */
+  .siteFooter::before {
+    display: none !important;
+  }
+
+  .siteFooter * {
+    max-width: none !important;
+  }
+
+  .siteFooter strong {
+    margin-bottom: 8px !important;
+  }
+
+  .footerLinks {
+    margin-top: 16px !important;
+  }
+}
