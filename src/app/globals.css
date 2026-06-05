@@ -1649,3 +1649,109 @@ footer a:hover {
     gap: 22px !important;
   }
 }
+
+/* Mobile nav + footer polish */
+.mobile-menu-button {
+  display: none;
+}
+
+.mobile-menu-panel {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  nav,
+  .desktop-nav,
+  .nav-links,
+  .header-links {
+    display: none !important;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0 11px;
+    margin-left: auto;
+  }
+
+  .mobile-menu-button span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 99px;
+    background: #d4af37;
+  }
+
+  .mobile-menu-panel {
+    display: grid;
+    gap: 4px;
+    position: absolute;
+    top: 74px;
+    left: 16px;
+    right: 16px;
+    z-index: 100;
+    padding: 14px;
+    border-radius: 22px;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    background: rgba(7, 7, 7, 0.98);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+  }
+
+  .mobile-menu-panel a {
+    padding: 13px 14px;
+    border-radius: 14px;
+    color: #f5f0e6;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .mobile-menu-panel a:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+  }
+
+  footer,
+  .footer,
+  .site-footer {
+    padding: 28px 20px 34px !important;
+    margin-top: 36px !important;
+  }
+
+  footer > *,
+  .footer > *,
+  .site-footer > * {
+    max-width: 100% !important;
+  }
+
+  footer p,
+  .footer p,
+  .site-footer p {
+    margin: 0 0 8px !important;
+    line-height: 1.45 !important;
+  }
+
+  footer nav,
+  .footer nav,
+  .site-footer nav,
+  footer .links,
+  .footer-links {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 22px !important;
+    margin-top: 22px !important;
+  }
+
+  footer a,
+  .footer a,
+  .site-footer a {
+    font-size: 15px !important;
+    color: rgba(255, 255, 255, 0.62) !important;
+  }
+}
