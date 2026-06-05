@@ -2503,3 +2503,36 @@ footer a:hover {
     line-height: 1.35 !important;
   }
 }
+
+/* FINAL mobile hero: match Vanta Labs spacing */
+@media (max-width: 760px) {
+  header {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+
+  .hero.homeHero {
+    min-height: 100vh !important;
+    padding: 300px 28px 120px !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero.homeHero .kicker {
+    margin-bottom: 38px !important;
+  }
+
+  .hero.homeHero h1 {
+    max-width: 680px !important;
+    font-size: clamp(54px, 13.5vw, 74px) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.08em !important;
+    margin: 0 0 36px !important;
+  }
+
+  .hero.homeHero p {
+    max-width: 680px !important;
+    font-size: 26px !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+  }
+}
