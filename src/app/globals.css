@@ -2479,3 +2479,27 @@ footer a:hover {
     overflow-wrap: break-word;
   }
 }
+
+/* Mobile page breathing room - keep footer untouched */
+@media (max-width: 760px) {
+  header,
+  .hero,
+  .homeHero,
+  .section,
+  .homeSection {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+
+  .hero h1,
+  .homeHero h1 {
+    font-size: clamp(48px, 13vw, 68px) !important;
+    line-height: 0.92 !important;
+  }
+
+  .hero p,
+  .homeHero p {
+    font-size: 24px !important;
+    line-height: 1.35 !important;
+  }
+}
