@@ -178,23 +178,22 @@ export default function Home() {
           <strong>Cigar Ledger</strong><br />
           UK cigar price comparison by Vanta Labs.<br />
           Built for cigar smokers who check before they buy.
+          <div className="footerCopyright">© 2026 Vanta Labs</div>
         </div>
 
-        <div className="footerLinks">
+        <div className="footerLinks footerProducts">
           <a href="/cheap-cigars-uk">Cheap cigars UK</a>
           <a href="/cigar-price-comparison">Compare cigar prices</a>
           <a href="/cigar-landed-cost-uk">Landed cost guide</a>
           <a href="/#products">Herf Station</a>
         </div>
 
-        <div className="footerLinks">
+        <div className="footerLinks footerCompany">
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
         </div>
-
-        <div>© 2026 Vanta Labs</div>
       </footer>
     </main>
   );
