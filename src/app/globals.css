@@ -1542,3 +1542,18 @@ footer a:hover {
   }
 }
 
+
+
+/* Final homepage footer override */
+.siteFooter {
+  display: grid !important;
+  grid-template-columns: 1.4fr 1.2fr 1.2fr auto !important;
+  gap: 28px !important;
+  align-items: start !important;
+}
+
+@media (max-width: 900px) {
+  .siteFooter {
+    grid-template-columns: 1fr !important;
+  }
+}
