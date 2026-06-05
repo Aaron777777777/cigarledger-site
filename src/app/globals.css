@@ -2191,3 +2191,43 @@ footer a:hover {
     margin-top: 34px !important;
   }
 }
+
+/* FINAL mobile footer correction - clean for both app sites */
+@media (max-width: 760px) {
+  .siteFooter {
+    display: block !important;
+    max-width: none !important;
+    margin: 42px 28px 0 !important;
+    padding: 32px 0 28px !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+    color: rgba(255,255,255,0.56) !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  .siteFooter strong {
+    color: #f7efe2 !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+  }
+
+  .footerLinks {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px 24px !important;
+    margin-top: 20px !important;
+  }
+
+  .footerLinks a {
+    color: rgba(255,255,255,0.58) !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    width: auto !important;
+  }
+
+  .siteFooter > div:last-child {
+    margin-top: 22px !important;
+    font-size: 14px !important;
+  }
+}
