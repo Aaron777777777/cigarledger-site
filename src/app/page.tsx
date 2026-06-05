@@ -23,8 +23,8 @@ export default function Home() {
 
       <section id="products" className="section homeSection">
         <div className="section-head">
-          <span className="kicker">Two dedicated apps</span>
-          <h2>Buy smarter. Herf together.</h2>
+          <span className="kicker">Connected cigar tools</span>
+          <h2>Compare prices. Join the lounge.</h2>
         </div>
 
         <div className="products">
