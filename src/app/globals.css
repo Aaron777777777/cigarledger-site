@@ -1171,6 +1171,61 @@ footer a:hover {
 }
 
 
+
+/* Softer lower homepage sections */
+
+.aboutPlain .section-head,
+#guides .section-head,
+#contact .section-head {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.aboutPlain h2,
+#guides h2,
+#contact h2 {
+  max-width: 760px;
+  font-size: clamp(34px, 4.2vw, 54px);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.aboutPlain .kicker,
+#guides .kicker,
+#contact .kicker {
+  margin-bottom: 18px;
+}
+
+.aboutPlain p,
+#contact p {
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+#guides.homeSection,
+#contact.homeSection,
+.aboutPlain.homeSection {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+@media (max-width: 700px) {
+  .aboutPlain h2,
+  #guides h2,
+  #contact h2 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  #guides.homeSection,
+  #contact.homeSection,
+  .aboutPlain.homeSection {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+}
+
+
 /* HOMEPAGE GUIDE CARDS */
 
 .guideGrid {
