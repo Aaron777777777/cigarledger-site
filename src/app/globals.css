@@ -1012,15 +1012,15 @@ footer a:hover {
   min-height: calc(100svh - 90px) !important;
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 40px !important;
+  justify-content: flex-start;
+  padding-top: 120px !important;
   padding-bottom: 80px !important;
 }
 
 @media (max-width: 700px) {
   .homeHero {
     min-height: calc(100svh - 72px) !important;
-    padding-top: 30px !important;
+    padding-top: 92px !important;
     padding-bottom: 50px !important;
   }
 }
