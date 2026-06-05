@@ -20,7 +20,8 @@ export default function MobileMenu() {
         <Link href="/cigar-price-comparison" onClick={() => document.body.classList.remove("menu-open")}>Compare prices</Link>
         <Link href="/cheap-cigars-uk" onClick={() => document.body.classList.remove("menu-open")}>Cheap cigars</Link>
         <Link href="/about" onClick={() => document.body.classList.remove("menu-open")}>About</Link>
-        <Link href="/contact" onClick={() => document.body.classList.remove("menu-open")}>Contact</Link>
+        <Link href="/privacy" onClick={() => document.body.classList.remove("menu-open")}>Privacy</Link>
+        <Link href="/terms" onClick={() => document.body.classList.remove("menu-open")}>Terms</Link>
       </div>
     </>
   );

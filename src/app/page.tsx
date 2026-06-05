@@ -10,7 +10,8 @@ export default function Home() {
           <a href="#products">Apps</a>
           <a href="#about">About</a>
           <a href="#guides">Guides</a>
-          <a href="#contact">Contact</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
         </nav>
         <MobileMenu />
       </header>

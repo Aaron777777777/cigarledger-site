@@ -14,7 +14,8 @@ export default function AboutPage() {
 
         <nav>
           <a href="/">Home</a>
-          <a href="/contact">Contact</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
         </nav>
         <MobileMenu />
       </header>
