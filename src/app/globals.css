@@ -934,9 +934,10 @@ footer a:hover {
 /* HOMEPAGE TIGHTENING */
 
 .homeHero {
-  min-height: 0 !important;
-  padding-top: 90px !important;
-  padding-bottom: 90px !important;
+  min-height: calc(100vh - 86px) !important;
+  min-height: calc(100svh - 86px) !important;
+  padding-top: 96px !important;
+  padding-bottom: 120px !important;
 }
 
 .homeHero p {
@@ -990,8 +991,9 @@ footer a:hover {
 
 @media (max-width: 700px) {
   .homeHero {
-    padding-top: 46px !important;
-    padding-bottom: 58px !important;
+    min-height: calc(100svh - 72px) !important;
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
   }
 
   .homeSection {
