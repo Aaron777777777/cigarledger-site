@@ -2596,3 +2596,19 @@ footer a:hover {
     max-width: 96% !important;
   }
 }
+
+/* Mobile hero type correction - less cramped */
+@media (max-width: 760px) {
+  .hero.homeHero h1 {
+    font-size: 46px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.055em !important;
+    max-width: 680px !important;
+  }
+
+  .hero.homeHero p {
+    font-size: 19px !important;
+    line-height: 1.65 !important;
+    max-width: 96% !important;
+  }
+}
