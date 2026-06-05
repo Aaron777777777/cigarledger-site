@@ -2536,3 +2536,29 @@ footer a:hover {
     margin: 0 !important;
   }
 }
+
+/* FINAL FIX: Cigar Ledger mobile hero matched back to Vanta Labs */
+@media (max-width: 760px) {
+  .hero.homeHero {
+    min-height: 100vh !important;
+    padding: 210px 28px 110px !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero.homeHero .kicker {
+    margin-bottom: 34px !important;
+  }
+
+  .hero.homeHero h1 {
+    font-size: clamp(50px, 13vw, 70px) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.075em !important;
+    margin: 0 0 34px !important;
+  }
+
+  .hero.homeHero p {
+    font-size: 25px !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+  }
+}
