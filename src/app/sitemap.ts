@@ -33,6 +33,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cigar-import-duty-uk",
     "/cigar-landed-cost-uk",
     "/importing-cigars-from-europe-to-uk",
+    "/best-place-to-buy-cigars-uk",
+    "/cheapest-place-to-buy-cigars-uk",
+    "/buy-cigars-online-uk",
+    "/uk-cigar-prices",
+    "/cigar-price-checker-uk",
+    "/cohiba-price-list-uk",
+    "/montecristo-price-list-uk",
+    "/partagas-price-list-uk",
+    "/romeo-y-julieta-price-list-uk",
+    "/h-upmann-price-list-uk",
+    "/cohiba-behike-52-price-uk",
+    "/cohiba-behike-56-price-uk",
+    "/montecristo-edmundo-price-uk",
+    "/partagas-shorts-price-uk",
+    "/hoyo-epicure-no-2-price-uk",
   ];
 
   return routes.map((route) => ({
