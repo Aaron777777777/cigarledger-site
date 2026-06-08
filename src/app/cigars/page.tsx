@@ -1,12 +1,5 @@
-import SiteFooter from "@/components/SiteFooter";
-import MobileMenu from "@/components/MobileMenu";
-import { getCigars } from "@/lib/cigars";
-import CigarSearchApp from "@/components/CigarSearchApp";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default async function CigarsPage() {
-  const cigars = await getCigars();
-
-  return <CigarSearchApp cigars={cigars as any} />;
+export default function CigarsPage() {
+  redirect("/");
 }
