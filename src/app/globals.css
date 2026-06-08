@@ -2615,3 +2615,46 @@ footer a:hover {
     font-size: 16px;
   }
 }
+
+.app-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.app-cta-card {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+}
+
+.app-cta-card span {
+  display: block;
+  color: #b8b8b8;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.app-cta-card strong {
+  color: #d4af37;
+  font-size: 1.05rem;
+}
+
+.app-cta-card.primary {
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+}
+
+.app-cta-card.primary span,
+.app-cta-card.primary strong {
+  color: #111;
+}
+
+@media (max-width: 700px) {
+  .app-cta-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -34,12 +34,15 @@ export default async function CigarsPage() {
           For full live comparisons, watchlists and premium price tools, use the app.
         </p>
 
-        <div className="cta-row">
-          <a className="primary-cta" href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">
-            Download Cigar Ledger
+        <div className="app-cta-grid">
+          <a className="app-cta-card primary" href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">
+            <span>Compare prices on the go</span>
+            <strong>Download Cigar Ledger</strong>
           </a>
-          <a className="secondary-cta" href="/">
-            Explore Vanta cigar apps
+
+          <a className="app-cta-card" href="/">
+            <span>Discover the ecosystem</span>
+            <strong>Explore Vanta cigar apps</strong>
           </a>
         </div>
 
