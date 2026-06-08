@@ -9,7 +9,6 @@ export default function TermsPage() {
       <a href="/" className="back-link">← Back to website</a>
 
       <section className="legal-card">
-        <span className="kicker">Terms of Use</span>
         <h1>Terms of Use</h1>
 
         <p><strong>Last updated:</strong> 30 May 2026</p>

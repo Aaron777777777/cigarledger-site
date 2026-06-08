@@ -9,7 +9,6 @@ export default function PrivacyPage() {
       <a href="/" className="back-link">← Back to website</a>
 
       <section className="legal-card">
-        <span className="kicker">Privacy Policy</span>
         <h1>Privacy Policy</h1>
 
         <p><strong>Effective date:</strong> 30 May 2026</p>
