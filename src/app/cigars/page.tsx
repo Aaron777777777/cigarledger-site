@@ -22,7 +22,7 @@ export default function Page() {
       <article className="seoArticle">
         <span className="kicker">Cigar price guide</span>
         <h1>All Cigars UK</h1>
-        <p className="lead">Cigars in the UK can be hard to judge because the listed price is not always the final cost. Import costs and delivery can quickly change the value.</p>
+        <p className="lead">Browse popular cigars, compare UK prices and discover new favourites. Download Cigar Ledger to compare prices, track favourites and find the best cigar deals.</p>
 
         <section><h2>Cheap does not always mean best value</h2><p>A lower listed price can become expensive once taxes, shipping and landed costs are added. Comparing properly helps avoid false savings.</p></section>
 
