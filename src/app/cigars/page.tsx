@@ -1,66 +1,73 @@
-import { getCigars } from "@/lib/cigars";
-
-export const dynamic = "force-dynamic";
-
+import SiteFooter from "@/components/SiteFooter";
+import MobileMenu from "@/components/MobileMenu";
 export const metadata = {
-  title: "All Cigars | Cigar Ledger UK Cigar Price Search",
-  description:
-    "Search cigars, compare UK cigar prices and find cheaper cigar options with Cigar Ledger.",
+  title: "All Cigars UK | Cigar Ledger",
+  description: "Find cigars in the UK and compare prices before buying. Check UK retailers and estimated import costs with Cigar Ledger.",
 };
 
-function priceFrom(prices: any) {
-  if (!prices) return null;
-  const values = Array.isArray(prices) ? prices : Object.values(prices);
-  const nums = values
-    .map((item: any) =>
-      Number(String(item?.price ?? item?.singlePrice ?? item?.boxPrice ?? item ?? "").replace(/[£,]/g, ""))
-    )
-    .filter((n) => Number.isFinite(n) && n > 0);
-  return nums.length ? Math.min(...nums) : null;
-}
-
-export default async function CigarsPage() {
-  const cigars = await getCigars();
-  const visible = cigars.slice(0, 48);
-
+export default function Page() {
   return (
-    <main className="legal-page">
-      <section className="legal-card">
-        <p className="kicker">Cigar Ledger</p>
-        <h1>Search cigars and compare UK cigar prices</h1>
+    <main className="page">
+      <header>
+        <a href="/" className="brand">Cigar Ledger</a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+        <MobileMenu />
+      </header>
 
-        <p>
-          Browse popular cigars, check UK price ranges and use Cigar Ledger to find cheaper places to buy.
-          For full live comparisons, watchlists and premium price tools, use the app.
-        </p>
+      <article className="seoArticle">
+        <span className="kicker">Cigar price guide</span>
+        <h1>All Cigars UK</h1>
+        <p className="lead">Cigars in the UK can be hard to judge because the listed price is not always the final cost. Import costs and delivery can quickly change the value.</p>
 
-        <div className="app-cta-grid">
-          <a className="app-cta-card primary" href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">
-            <span>Compare prices on the go</span>
-            <strong>Download Cigar Ledger</strong>
-          </a>
+        <section><h2>Cheap does not always mean best value</h2><p>A lower listed price can become expensive once taxes, shipping and landed costs are added. Comparing properly helps avoid false savings.</p></section>
 
-          <a className="app-cta-card" href="/">
-            <span>Discover the ecosystem</span>
-            <strong>Explore Vanta cigar apps</strong>
-          </a>
+        <section><h2>Compare before ordering</h2><p>Cigar Ledger is designed to make price checking quicker by helping smokers compare UK prices and estimate whether importing still makes sense.</p></section>
+
+        <section><h2>Find better buying routes</h2><p>Use the app as a quick check before your next cigar order so you can buy with more confidence.</p></section>
+
+        <div className="seoDownloadGrid">
+          <div className="seoDownload">
+            <img src="/cl.png" alt="Cigar Ledger app icon" />
+            <div>
+              <strong>Download Cigar Ledger</strong>
+              <span>Compare UK cigar prices and landed costs before you buy.</span>
+              <a
+                className="button"
+                href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
+                target="_blank"
+                rel="noopener"
+              >
+                Download on Android
+              </a>
+            </div>
+          </div>
+
+          <div className="seoDownload">
+            <img src="/hs.png" alt="Herf Station app icon" />
+            <div>
+              <strong>Herf Station</strong>
+              <span>Found your cigar? Join live cigar lounges with other smokers.</span>
+              <div className="links">
+                <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
+                <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <section className="guide-grid">
-          {visible.map((cigar: any) => {
-            const uk = priceFrom(cigar.ukPrices);
-            return (
-              <article className="guide-card" key={cigar.id}>
-                {cigar.imageUrl ? <img src={cigar.imageUrl} alt={cigar.name || "Cigar"} /> : null}
-                <h2>{cigar.name || "Cigar"}</h2>
-                <p>{cigar.brand || "Cigar price guide"}</p>
-                <strong>{uk ? `UK from £${uk.toFixed(uk % 1 === 0 ? 0 : 2)}` : "Price guide in app"}</strong>
-                <a href={`/cigar/${cigar.id}`}>View cigar →</a>
-              </article>
-            );
-          })}
-        </section>
-      </section>
+        <div className="relatedLinks">
+          <a href="/cheap-cigars-uk">All Cigars UK</a>
+          <a href="/cheapest-cigars-uk">Cheapest Cigars UK</a>
+          <a href="/compare-cigar-prices-uk">Compare Cigar Prices</a>
+          <a href="/cigar-import-duty-uk">Cigar Import Duty</a>
+          <a href="/cigar-landed-cost-uk">Cigar Landed Cost</a>
+        </div>
+      </article>
     </main>
   );
 }

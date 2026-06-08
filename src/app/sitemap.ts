@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/about",
+    "/cigars",
     "/cheap-cigars-uk",
     "/cheapest-cigars-uk",
     "/cheap-cuban-cigars-uk",
