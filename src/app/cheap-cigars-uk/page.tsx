@@ -75,6 +75,55 @@ export default function Page() {
             having to search the same retailer pages again and again.
           </p>
 
+          <h2>What should you look for in a good value cigar?</h2>
+          <p>
+            Price is only one part of the equation. A cigar that costs less today
+            is not necessarily better value if it does not suit your preferred
+            strength, flavour profile or smoking time. Many experienced smokers
+            focus on overall value rather than simply finding the lowest price.
+          </p>
+
+          <p>
+            Comparing cigars across different retailers can reveal surprisingly
+            large differences. Singles, packs and boxes can all produce different
+            effective prices, making comparison important before buying.
+          </p>
+
+          <h2>Why do cigar prices vary so much?</h2>
+          <p>
+            Retailers operate with different overheads, stock levels, shipping
+            arrangements and promotions. The same cigar can often be listed at
+            noticeably different prices depending on where you look.
+          </p>
+
+          <p>
+            Exchange rates, import costs and availability can also influence
+            pricing. Premium Cuban cigars in particular can fluctuate depending
+            on stock and demand.
+          </p>
+
+          <h2>How Cigar Ledger helps</h2>
+          <p>
+            Cigar Ledger was built to make cigar price comparison easier. Instead
+            of manually checking retailer after retailer, the app helps users
+            compare UK cigar prices, discover better-value options and keep track
+            of favourites in one place.
+          </p>
+
+          <p>
+            Whether you are looking for everyday cigars, affordable Cubans or
+            simply trying to get the best value for money, Cigar Ledger helps
+            remove much of the guesswork from the buying process.
+          </p>
+
+          <h2>Popular searches related to this topic</h2>
+          <p>
+            Many visitors also search for cheap cigars UK, cheapest cigars UK,
+            cigar deals UK, cigar discounts UK, Cuban cigar prices and cigar
+            price comparison tools before making a purchase decision.
+          </p>
+
+
           <h2>Related cigar guides</h2>
           <div className="related-links">
               <a href="/cheapest-cigars-uk">Cheapest Cigars UK</a>
