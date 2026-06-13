@@ -3,8 +3,8 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Cheapest Cigars UK | Cigar Ledger",
-  description: "Find the cheapest cigars in the UK by comparing price ranges, popular brands and better-value options with Cigar Ledger.",
+  title: "Best Cigar Prices UK | Cigar Ledger",
+  description: "Compare UK cigar prices and find better-value cigars with Cigar Ledger.",
 };
 
 export default function Page() {
@@ -15,8 +15,8 @@ export default function Page() {
       <main className="seo-page">
         <section className="seo-hero">
           <span className="kicker">CIGAR PRICE GUIDE</span>
-          <h1>Cheapest Cigars UK</h1>
-          <p>Find the cheapest cigars in the UK by comparing price ranges, popular brands and better-value options with Cigar Ledger.</p>
+          <h1>Best Cigar Prices UK</h1>
+          <p>Compare UK cigar prices and find better-value cigars with Cigar Ledger.</p>
         </section>
 
         <section className="app-grid">
@@ -64,9 +64,9 @@ export default function Page() {
           <h2>Related cigar guides</h2>
           <div className="related-links">
               <a href="/cheap-cigars-uk">Cheap Cigars UK</a>
+              <a href="/cheapest-cigars-uk">Cheapest Cigars UK</a>
               <a href="/best-cheap-cigars-uk">Best Cheap Cigars UK</a>
               <a href="/cigar-deals-uk">Cigar Deals UK</a>
-              <a href="/best-cigar-prices-uk">Best Cigar Prices UK</a>
               <a href="/cigar-price-comparison">Cigar Price Comparison</a>
           </div>
         </section>

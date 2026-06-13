@@ -48,6 +48,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/montecristo-edmundo-price-uk",
     "/partagas-shorts-price-uk",
     "/hoyo-epicure-no-2-price-uk",
+    "/cheap-cigars",
+    "/cheapest-cigars",
+    "/best-cheap-cigars-uk",
+    "/cheapest-cuban-cigars",
+    "/cheapest-cuban-cigars-uk",
+    "/cigar-deals-uk",
+    "/cigar-discounts-uk",
+    "/best-cigar-prices-uk",
   ];
 
   return routes.map((route) => ({

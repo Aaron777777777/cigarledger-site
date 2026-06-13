@@ -1,73 +1,78 @@
+import type { Metadata } from "next";
+import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import MobileMenu from "@/components/MobileMenu";
-export const metadata = {
+
+export const metadata: Metadata = {
   title: "Cheap Cigars UK | Cigar Ledger",
-  description: "Find cheap cigars in the UK and compare prices before buying. Check UK retailers and estimated import costs with Cigar Ledger.",
+  description: "Looking for cheap cigars in the UK? Compare affordable cigars, budget-friendly favourites and UK cigar prices with Cigar Ledger.",
 };
 
 export default function Page() {
   return (
-    <main className="page">
-      <header>
-        <a href="/" className="brand">Cigar Ledger</a>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-        </nav>
-        <MobileMenu />
-      </header>
+    <>
+      <SiteHeader />
 
-      <article className="seoArticle">
-        <span className="kicker">Cigar price guide</span>
-        <h1>Cheap Cigars UK</h1>
-        <p className="lead">Cheap cigars in the UK can be hard to judge because the listed price is not always the final cost. Import costs and delivery can quickly change the value.</p>
+      <main className="seo-page">
+        <section className="seo-hero">
+          <span className="kicker">CIGAR PRICE GUIDE</span>
+          <h1>Cheap Cigars UK</h1>
+          <p>Looking for cheap cigars in the UK? Compare affordable cigars, budget-friendly favourites and UK cigar prices with Cigar Ledger.</p>
+        </section>
 
-        <section><h2>Cheap does not always mean best value</h2><p>A lower listed price can become expensive once taxes, shipping and landed costs are added. Comparing properly helps avoid false savings.</p></section>
-
-        <section><h2>Compare before ordering</h2><p>Cigar Ledger is designed to make price checking quicker by helping smokers compare UK prices and estimate whether importing still makes sense.</p></section>
-
-        <section><h2>Find better buying routes</h2><p>Use the app as a quick check before your next cigar order so you can buy with more confidence.</p></section>
-
-        <div className="seoDownloadGrid">
-          <div className="seoDownload">
-            <img src="/cl.png" alt="Cigar Ledger app icon" />
+        <section className="app-grid">
+          <div className="app-card primary">
+            <div className="app-icon">CL</div>
             <div>
-              <strong>Download Cigar Ledger</strong>
-              <span>Compare UK cigar prices and landed costs before you buy.</span>
-              <a
-                className="button"
-                href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
-                target="_blank"
-                rel="noopener"
-              >
-                Download on Android
+              <h2>Download Cigar Ledger</h2>
+              <p>Compare UK cigar prices, track favourites and find better cigar deals from the app.</p>
+              <a className="gold-button" href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">
+                Download on Android →
               </a>
             </div>
           </div>
 
-          <div className="seoDownload">
-            <img src="/hs.png" alt="Herf Station app icon" />
+          <div className="app-card">
+            <div className="app-icon">HS</div>
             <div>
-              <strong>Herf Station</strong>
-              <span>Found your cigar? Join live cigar lounges with other smokers.</span>
-              <div className="links">
-                <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
-                <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
+              <h2>Herf Station</h2>
+              <p>Found your cigar? Join live cigar lounges with other smokers.</p>
+              <div className="button-row">
+                <a className="outline-button" href="/">Android →</a>
+                <a className="outline-button" href="/">iOS →</a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="relatedLinks">
-          <a href="/cheap-cigars-uk">Cheap Cigars UK</a>
-          <a href="/cheapest-cigars-uk">Cheapest Cigars UK</a>
-          <a href="/compare-cigar-prices-uk">Compare Cigar Prices</a>
-          <a href="/cigar-import-duty-uk">Cigar Import Duty</a>
-          <a href="/cigar-landed-cost-uk">Cigar Landed Cost</a>
-        </div>
-      </article>
-    </main>
+        <section className="content-card">
+          <h2>How to find better cigar prices</h2>
+          <p>
+            Cigar prices can vary a lot between retailers, formats and brands. A cigar that looks expensive
+            in one place may be better value somewhere else, especially when you compare singles, packs and boxes.
+          </p>
+          <p>
+            Cigar Ledger is built to make that easier. Instead of checking lots of shops manually, use the app
+            to compare UK cigar prices, save cigars you are interested in and keep an eye on better-value options.
+          </p>
+
+          <h2>Why use Cigar Ledger?</h2>
+          <p>
+            The website gives you a quick guide, but the app is where the proper comparison tools live. You can
+            search cigars, track favourites and make better buying decisions without turning every purchase into a spreadsheet.
+          </p>
+
+          <h2>Related cigar guides</h2>
+          <div className="related-links">
+              <a href="/cheapest-cigars-uk">Cheapest Cigars UK</a>
+              <a href="/best-cheap-cigars-uk">Best Cheap Cigars UK</a>
+              <a href="/cigar-deals-uk">Cigar Deals UK</a>
+              <a href="/best-cigar-prices-uk">Best Cigar Prices UK</a>
+              <a href="/cigar-price-comparison">Cigar Price Comparison</a>
+          </div>
+        </section>
+      </main>
+
+      <SiteFooter />
+    </>
   );
 }
