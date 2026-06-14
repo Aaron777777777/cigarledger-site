@@ -3166,3 +3166,101 @@ footer a:hover {
     padding: 30px;
   }
 }
+
+/* Vanta Labs product card system copied for Cigar Ledger SEO pages */
+.seo-hero h1 {
+  font-size: clamp(3.2rem, 5.6vw, 4.8rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.065em !important;
+}
+
+.seo-hero p {
+  max-width: 760px !important;
+  font-size: 1.18rem !important;
+  line-height: 1.65 !important;
+}
+
+.seo-products {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  margin: 56px 0 56px !important;
+}
+
+.seo-products .product {
+  min-height: auto !important;
+  padding: 24px !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018)) !important;
+}
+
+.seo-products .product-top {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+}
+
+.seo-products .app-icon {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 18px !important;
+  object-fit: cover !important;
+  flex: 0 0 72px !important;
+  box-shadow: 0 18px 36px rgba(0,0,0,0.42) !important;
+}
+
+.seo-products .tag {
+  margin-bottom: 8px !important;
+  color: rgba(255,255,255,0.42) !important;
+  font-size: 10px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+.seo-products h3 {
+  margin: 0 0 16px !important;
+  font-size: 30px !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.065em !important;
+}
+
+.seo-products p {
+  margin: 0 !important;
+  color: #bdb7ad !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  max-width: 360px !important;
+}
+
+.seo-products .links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+}
+
+.seo-products .button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 14px !important;
+  border: 1px solid rgba(212,175,55,0.38) !important;
+  border-radius: 999px !important;
+  color: #d4af37 !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 800px) {
+  .seo-products {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seo-products .product-top {
+    flex-direction: column !important;
+  }
+}

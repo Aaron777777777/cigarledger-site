@@ -25,32 +25,36 @@ export default function Page() {
           <p>If you are searching for the cheapest cigars in the UK, you probably want a fair price without wasting time checking every retailer manually. Cigar Ledger is built around that exact problem.</p>
         </section>
 
-        <section className="vanta-product-grid">
-          <article className="vanta-product-card">
-            <img className="vanta-product-icon" src="/cl.png" alt="Cigar Ledger app icon" />
-            <p className="vanta-card-kicker">CIGAR DISCOVERY</p>
-            <h2>Cigar Ledger</h2>
-            <p>
-              Compare UK cigar prices, track favourites and build a better picture of what belongs in your humidor.
-            </p>
-            <div className="vanta-store-buttons">
-              <a href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">Google Play →</a>
+        <div className="products seo-products">
+          <article className="product">
+            <div className="product-top">
+              <img className="app-icon" src="/cl.png" alt="Cigar Ledger app icon" />
+              <div>
+                <div className="tag">Cigar Discovery</div>
+                <h3>Cigar Ledger</h3>
+                <p>Track cigars, compare prices and build a better picture of what belongs in your humidor.</p>
+              </div>
+            </div>
+            <div className="links">
+              <a className="button" href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger">Google Play</a>
             </div>
           </article>
 
-          <article className="vanta-product-card">
-            <img className="vanta-product-icon" src="/hs.png" alt="Herf Station app icon" />
-            <p className="vanta-card-kicker">CIGAR COMMUNITY</p>
-            <h2>Herf Station</h2>
-            <p>
-              Live virtual cigar lounges for smokers who want somewhere focused to connect, chat and enjoy the smoke.
-            </p>
-            <div className="vanta-store-buttons">
-              <a href="/">Google Play →</a>
-              <a href="/">App Store →</a>
+          <article className="product">
+            <div className="product-top">
+              <img className="app-icon" src="/hs.png" alt="Herf Station app icon" />
+              <div>
+                <div className="tag">Cigar Community</div>
+                <h3>Herf Station</h3>
+                <p>Live virtual cigar lounges for smokers who want somewhere focused to connect, chat and enjoy the smoke.</p>
+              </div>
+            </div>
+            <div className="links">
+              <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station">Google Play</a>
+              <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305">App Store</a>
             </div>
           </article>
-        </section>
+        </div>
 
         <section className="content-card">
           <h2>How to find better cigar prices</h2>
