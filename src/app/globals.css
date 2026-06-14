@@ -3086,3 +3086,83 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Exact Vanta-style product cards for Cigar Ledger SEO pages */
+.vanta-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin: 64px 0 64px;
+}
+
+.vanta-product-card {
+  min-height: 390px;
+  padding: 38px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 26px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+}
+
+.vanta-product-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 22px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 34px;
+  box-shadow: 0 22px 46px rgba(0,0,0,0.42);
+}
+
+.vanta-card-kicker {
+  margin: 0 0 8px;
+  color: rgba(255,255,255,0.42);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.32em;
+}
+
+.vanta-product-card h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  line-height: 0.95;
+  letter-spacing: -0.08em;
+}
+
+.vanta-product-card > p:not(.vanta-card-kicker) {
+  max-width: 360px;
+  margin: 0 0 34px;
+  color: #bdb7ad;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.vanta-store-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vanta-store-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid rgba(212,175,55,0.38);
+  border-radius: 999px;
+  color: #d4af37;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .vanta-product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vanta-product-card {
+    min-height: auto;
+    padding: 30px;
+  }
+}

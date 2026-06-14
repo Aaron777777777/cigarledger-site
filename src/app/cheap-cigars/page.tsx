@@ -25,27 +25,27 @@ export default function Page() {
           <p>Finding a cheaper cigar should not mean gambling on quality. This guide is for smokers who want better value, sensible prices and a quick way to compare options before buying.</p>
         </section>
 
-        <section className="product-grid seo-product-grid">
-          <article className="product-card">
-            <img className="app-icon" src="/cl.png" alt="Cigar Ledger app icon" />
-            <p className="eyebrow">CIGAR DISCOVERY</p>
+        <section className="vanta-product-grid">
+          <article className="vanta-product-card">
+            <img className="vanta-product-icon" src="/cl.png" alt="Cigar Ledger app icon" />
+            <p className="vanta-card-kicker">CIGAR DISCOVERY</p>
             <h2>Cigar Ledger</h2>
             <p>
               Compare UK cigar prices, track favourites and build a better picture of what belongs in your humidor.
             </p>
-            <div className="store-buttons">
+            <div className="vanta-store-buttons">
               <a href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">Google Play →</a>
             </div>
           </article>
 
-          <article className="product-card">
-            <img className="app-icon" src="/hs.png" alt="Herf Station app icon" />
-            <p className="eyebrow">CIGAR COMMUNITY</p>
+          <article className="vanta-product-card">
+            <img className="vanta-product-icon" src="/hs.png" alt="Herf Station app icon" />
+            <p className="vanta-card-kicker">CIGAR COMMUNITY</p>
             <h2>Herf Station</h2>
             <p>
-              Found your cigar? Join live cigar lounges with smokers who want somewhere focused to connect.
+              Live virtual cigar lounges for smokers who want somewhere focused to connect, chat and enjoy the smoke.
             </p>
-            <div className="store-buttons">
+            <div className="vanta-store-buttons">
               <a href="/">Google Play →</a>
               <a href="/">App Store →</a>
             </div>
