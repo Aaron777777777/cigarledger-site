@@ -3060,3 +3060,29 @@ footer a:hover {
   background: transparent !important;
   border: 1px solid rgba(212,175,55,0.45) !important;
 }
+
+/* Reuse Vanta Labs-style product cards on SEO pages */
+.seo-product-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 54px 0 52px;
+}
+
+.seo-product-grid .product-card {
+  min-height: 430px;
+}
+
+.seo-product-grid .app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+}
+
+.seo-product-grid .store-buttons {
+  margin-top: auto;
+}
+
+@media (max-width: 800px) {
+  .seo-product-grid {
+    grid-template-columns: 1fr;
+  }
+}

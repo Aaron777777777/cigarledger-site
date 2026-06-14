@@ -25,29 +25,31 @@ export default function Page() {
           <p>If you are searching for the cheapest cigars in the UK, you probably want a fair price without wasting time checking every retailer manually. Cigar Ledger is built around that exact problem.</p>
         </section>
 
-        <section className="app-grid">
-          <div className="app-card primary">
-            <img className="app-logo" src="/cl.png" alt="Cigar Ledger app icon" />
-            <div>
-              <h2>Download Cigar Ledger</h2>
-              <p>Compare UK cigar prices, save favourites and find better-value cigars without checking every retailer manually.</p>
-              <a className="gold-button" href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">
-                Download on Android →
-              </a>
+        <section className="product-grid seo-product-grid">
+          <article className="product-card">
+            <img className="app-icon" src="/cl.png" alt="Cigar Ledger app icon" />
+            <p className="eyebrow">CIGAR DISCOVERY</p>
+            <h2>Cigar Ledger</h2>
+            <p>
+              Compare UK cigar prices, track favourites and build a better picture of what belongs in your humidor.
+            </p>
+            <div className="store-buttons">
+              <a href="https://play.google.com/store/search?q=Cigar%20Ledger&c=apps">Google Play →</a>
             </div>
-          </div>
+          </article>
 
-          <div className="app-card">
-            <img className="app-logo" src="/hs.png" alt="Herf Station app icon" />
-            <div>
-              <h2>Herf Station</h2>
-              <p>Found your cigar? Join live cigar lounges with other smokers and talk through what you are enjoying.</p>
-              <div className="button-row">
-                <a className="outline-button" href="/">Android →</a>
-                <a className="outline-button" href="/">iOS →</a>
-              </div>
+          <article className="product-card">
+            <img className="app-icon" src="/hs.png" alt="Herf Station app icon" />
+            <p className="eyebrow">CIGAR COMMUNITY</p>
+            <h2>Herf Station</h2>
+            <p>
+              Found your cigar? Join live cigar lounges with smokers who want somewhere focused to connect.
+            </p>
+            <div className="store-buttons">
+              <a href="/">Google Play →</a>
+              <a href="/">App Store →</a>
             </div>
-          </div>
+          </article>
         </section>
 
         <section className="content-card">
