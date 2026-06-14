@@ -22,7 +22,7 @@ export default function Page() {
         <section className="seo-hero">
           <span className="kicker">CIGAR PRICE GUIDE</span>
           <h1>Cheapest Cigars</h1>
-          <p>Discover some of the cheapest cigars and compare prices before you buy. Cigar Ledger helps you compare prices, track favourites and make better buying decisions from the app.</p>
+          <p>The cheapest cigar is not always the one you should buy, but price still matters. This guide helps you think about low-cost cigars in a more useful way before comparing prices in Cigar Ledger.</p>
         </section>
 
         <section className="app-grid">

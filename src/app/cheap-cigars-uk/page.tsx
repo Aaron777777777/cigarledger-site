@@ -22,7 +22,7 @@ export default function Page() {
         <section className="seo-hero">
           <span className="kicker">CIGAR PRICE GUIDE</span>
           <h1>Cheap Cigars UK</h1>
-          <p>Looking for cheap cigars in the UK? Compare affordable cigars, budget-friendly favourites and UK cigar prices. Cigar Ledger helps you compare prices, track favourites and make better buying decisions from the app.</p>
+          <p>Cheap cigars in the UK can still be enjoyable, well-made and worth keeping in the humidor. The trick is knowing when a price is genuinely good value rather than just slightly cheaper.</p>
         </section>
 
         <section className="app-grid">

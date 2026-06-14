@@ -22,7 +22,7 @@ export default function Page() {
         <section className="seo-hero">
           <span className="kicker">CIGAR PRICE GUIDE</span>
           <h1>Cigar Discounts UK</h1>
-          <p>Find cigar discounts, offers and better-value cigar prices in the UK. Cigar Ledger helps you compare prices, track favourites and make better buying decisions from the app.</p>
+          <p>A cigar discount is only useful if the final price is actually competitive. Use this guide as a starting point, then use Cigar Ledger to compare prices before you buy.</p>
         </section>
 
         <section className="app-grid">
