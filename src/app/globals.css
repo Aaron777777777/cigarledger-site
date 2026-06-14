@@ -2946,3 +2946,85 @@ footer a:hover {
     font-size: clamp(3rem, 16vw, 4.4rem);
   }
 }
+
+/* Match Vanta Labs product card style more closely */
+.app-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.app-card,
+.app-card.primary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  min-height: 310px;
+  padding: 42px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+}
+
+.app-card.primary {
+  border-color: rgba(212,175,55,0.34);
+  background: linear-gradient(180deg, rgba(212,175,55,0.06), rgba(255,255,255,0.018));
+}
+
+.app-logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  padding: 0;
+  object-fit: cover;
+  background: transparent;
+  box-shadow: 0 22px 45px rgba(0,0,0,0.45);
+}
+
+.app-card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+
+.app-card p {
+  max-width: 420px;
+  margin-bottom: 28px;
+  color: #bdb7ad;
+  line-height: 1.55;
+}
+
+.gold-button,
+.outline-button {
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.gold-button {
+  color: #d4af37;
+  border: 1px solid rgba(212,175,55,0.45);
+  background: transparent;
+}
+
+.gold-button:hover,
+.outline-button:hover {
+  background: rgba(212,175,55,0.12);
+}
+
+@media (max-width: 800px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-card,
+  .app-card.primary {
+    min-height: auto;
+    padding: 32px;
+  }
+}
