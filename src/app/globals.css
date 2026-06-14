@@ -3028,3 +3028,35 @@ footer a:hover {
     padding: 32px;
   }
 }
+
+/* Remove highlighted first app card: match Vanta Labs equal-card treatment */
+.app-card.primary {
+  border-color: rgba(255,255,255,0.12) !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018)) !important;
+}
+
+.app-card,
+.app-card.primary {
+  min-height: 335px;
+  padding: 48px;
+}
+
+.app-logo {
+  margin-bottom: 18px;
+}
+
+.app-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 18px;
+}
+
+.app-card p {
+  max-width: 360px;
+  margin-bottom: 32px;
+}
+
+.gold-button {
+  color: #d4af37 !important;
+  background: transparent !important;
+  border: 1px solid rgba(212,175,55,0.45) !important;
+}
