@@ -1,8 +1,8 @@
-import SiteFooter from "@/components/SiteFooter";
 import MobileMenu from "@/components/MobileMenu";
+
 export const metadata = {
   title: "Cuban Cigar Prices UK | Cigar Ledger",
-  description: "Check Cuban cigar prices in the UK and compare buying routes. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
+  description: "Check Cuban cigar prices in the UK, compare retailers and understand landed costs before buying Cuban cigars.",
 };
 
 export default function Page() {
@@ -12,6 +12,7 @@ export default function Page() {
         <a href="/" className="brand">Cigar Ledger</a>
         <nav>
           <a href="/">Home</a>
+          <a href="/cigars">Cigars</a>
           <a href="/about">About</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
@@ -19,48 +20,51 @@ export default function Page() {
         <MobileMenu />
       </header>
 
-      <section className="hero smallHero seoPage">
-        <span className="kicker">Cigar price guide</span>
+      <article className="seoArticle">
+        <span className="kicker">Cuban cigar price guide</span>
         <h1>Cuban Cigar Prices UK</h1>
-        <p>Check Cuban cigar prices in the UK and compare buying routes.</p>
-        <p>
-          Cigar prices can vary between retailers, import routes and availability.
-          Cigar Ledger is built to help you check prices before spending money.
-        </p>
-        <p>
-          Compare UK prices, estimate landed costs after duty and VAT, and find
-          where your next cigar may cost less.
+        <p className="lead">
+          Cuban cigar prices in the UK can vary heavily between brands, sizes, retailers and import routes.
+          Cigar Ledger helps you compare prices before buying so you can spot when a cigar is fairly priced,
+          overpriced or better bought another way.
         </p>
 
-        <div className="seoDownloadGrid">
-<div className="seoDownload">
-          <img src="/cl.png" alt="Cigar Ledger app icon" />
-          <div>
-            <strong>Download Cigar Ledger</strong>
-            <span>Compare UK cigar prices and landed costs before you buy.</span>
-            <a
-              className="button"
-              href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
-              target="_blank"
-              rel="noopener"
-            >
-              Download on Android
-            </a>
-          </div>
+        <section>
+          <h2>Why Cuban cigar prices vary</h2>
+          <p>
+            The same Cuban cigar can look very different in price depending on UK retail margin, stock scarcity,
+            box age, shipping charges and whether you are comparing a single stick, a three-pack or a full box.
+            Popular names such as Cohiba, Montecristo, Partagas, Romeo y Julieta and H. Upmann often move first
+            when availability changes.
+          </p>
+        </section>
+
+        <section>
+          <h2>UK price versus landed cost</h2>
+          <p>
+            A cheaper overseas price is not automatically a better deal. Once duty, VAT, shipping and handling are
+            included, the real landed cost can be much closer to the UK price than it first appears. Cigar Ledger is
+            designed to help you check the full picture rather than just the headline price.
+          </p>
+        </section>
+
+        <section>
+          <h2>Best way to use this guide</h2>
+          <p>
+            Use the website to find the right buying route, then use the app as your quick price checker before
+            placing an order. It is especially useful for premium Cuban cigars where a small percentage difference
+            can mean a noticeable saving.
+          </p>
+        </section>
+
+        <div className="relatedLinks">
+          <a href="/cohiba-prices-uk">Cohiba Prices UK</a>
+          <a href="/montecristo-prices-uk">Montecristo Prices UK</a>
+          <a href="/partagas-prices-uk">Partagas Prices UK</a>
+          <a href="/uk-cigar-prices">UK Cigar Prices</a>
+          <a href="/cigar-landed-cost-uk">Cigar Landed Cost UK</a>
         </div>
-<div className="seoDownload">
-          <img src="/hs.png" alt="Herf Station app icon" />
-          <div>
-            <strong>Herf Station</strong>
-            <span>Found your cigar? Join live cigar lounges with other smokers.</span>
-            <div className="links">
-              <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
-              <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
+      </article>
     </main>
   );
 }

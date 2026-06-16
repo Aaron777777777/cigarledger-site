@@ -1,8 +1,8 @@
-import SiteFooter from "@/components/SiteFooter";
 import MobileMenu from "@/components/MobileMenu";
+
 export const metadata = {
   title: "Cohiba Prices UK | Cigar Ledger",
-  description: "Compare Cohiba cigar prices in the UK before buying. Cigar Ledger helps UK cigar smokers compare prices, landed costs and buying routes.",
+  description: "Compare Cohiba prices in the UK, including popular Cohiba cigars, UK buying routes and landed cost checks.",
 };
 
 export default function Page() {
@@ -12,6 +12,7 @@ export default function Page() {
         <a href="/" className="brand">Cigar Ledger</a>
         <nav>
           <a href="/">Home</a>
+          <a href="/cigars">Cigars</a>
           <a href="/about">About</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
@@ -19,48 +20,48 @@ export default function Page() {
         <MobileMenu />
       </header>
 
-      <section className="hero smallHero seoPage">
-        <span className="kicker">Cigar price guide</span>
+      <article className="seoArticle">
+        <span className="kicker">Cohiba price guide</span>
         <h1>Cohiba Prices UK</h1>
-        <p>Compare Cohiba cigar prices in the UK before buying.</p>
-        <p>
-          Cigar prices can vary between retailers, import routes and availability.
-          Cigar Ledger is built to help you check prices before spending money.
-        </p>
-        <p>
-          Compare UK prices, estimate landed costs after duty and VAT, and find
-          where your next cigar may cost less.
+        <p className="lead">
+          Cohiba is one of the most searched Cuban cigar brands in the UK, and prices can move quickly depending on
+          availability, size and retailer. Cigar Ledger helps you compare Cohiba prices before buying.
         </p>
 
-        <div className="seoDownloadGrid">
-<div className="seoDownload">
-          <img src="/cl.png" alt="Cigar Ledger app icon" />
-          <div>
-            <strong>Download Cigar Ledger</strong>
-            <span>Compare UK cigar prices and landed costs before you buy.</span>
-            <a
-              className="button"
-              href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger"
-              target="_blank"
-              rel="noopener"
-            >
-              Download on Android
-            </a>
-          </div>
+        <section>
+          <h2>Popular Cohiba cigars to compare</h2>
+          <p>
+            UK buyers often compare prices for the Cohiba Robusto, Siglo II, Siglo VI, Behike 52 and Behike 56.
+            These cigars can sit in very different price brackets, so it helps to compare like-for-like before
+            deciding whether a UK retailer, box split, travel purchase or import route makes sense.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Cohiba prices are usually higher</h2>
+          <p>
+            Cohiba tends to command premium pricing because of brand demand, limited availability and collector
+            interest. That means even small differences between retailers can matter. A cigar that looks only
+            slightly cheaper elsewhere may become expensive once postage, duty and VAT are included.
+          </p>
+        </section>
+
+        <section>
+          <h2>Check the real price before buying</h2>
+          <p>
+            The best Cohiba deal is not always the lowest headline price. Compare the UK price, estimated landed
+            cost and delivery route before spending. Cigar Ledger is built to make that check quicker.
+          </p>
+        </section>
+
+        <div className="relatedLinks">
+          <a href="/cohiba-robusto-price-uk">Cohiba Robusto Price UK</a>
+          <a href="/cohiba-siglo-ii-price-uk">Cohiba Siglo II Price UK</a>
+          <a href="/cohiba-siglo-vi-price-uk">Cohiba Siglo VI Price UK</a>
+          <a href="/cohiba-behike-52-price-uk">Cohiba Behike 52 Price UK</a>
+          <a href="/cuban-cigar-prices-uk">Cuban Cigar Prices UK</a>
         </div>
-<div className="seoDownload">
-          <img src="/hs.png" alt="Herf Station app icon" />
-          <div>
-            <strong>Herf Station</strong>
-            <span>Found your cigar? Join live cigar lounges with other smokers.</span>
-            <div className="links">
-              <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
-              <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
+      </article>
     </main>
   );
 }

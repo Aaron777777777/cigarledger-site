@@ -30,6 +30,34 @@ export default function Page() {
 
         <section><h2>Find better buying routes</h2><p>Use the app as a quick check before your next cigar order so you can buy with more confidence.</p></section>
 
+        <section>
+          <h2>Use Cigar Ledger before you buy</h2>
+          <p>
+            The cigars page is designed as a starting point for UK smokers who want to compare prices before ordering.
+            Use it to move from brand research into actual price checking, especially when comparing Cuban cigars,
+            budget cigars, premium singles and boxes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Compare brands, sizes and buying routes</h2>
+          <p>
+            A Robusto, Churchill, Toro or Petit Corona can vary a lot in price depending on the brand and retailer.
+            Cigar Ledger helps you think beyond the sticker price by checking UK prices, estimated import costs and
+            whether a supposed deal is still worth it after delivery and taxes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Useful cigar price guides</h2>
+          <p>
+            Start with Cuban cigar prices, Cohiba prices, Montecristo prices and cheap cigars UK if you want the
+            highest-value pages. These guides link together so you can compare options without jumping between
+            random retailer pages.
+          </p>
+        </section>
+
+
         <div className="seoDownloadGrid">
           <div className="seoDownload">
             <img src="/cl.png" alt="Cigar Ledger app icon" />
