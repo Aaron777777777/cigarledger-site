@@ -30,6 +30,31 @@ export default function Page() {
 
         <section><h2>Use Cigar Ledger as a buying check</h2><p>Cigar Ledger helps you compare prices and buying routes before placing your next order.</p></section>
 
+        <section>
+          <h2>Compare the final price, not just the shelf price</h2>
+          <p>
+            The lowest visible price is not always the best deal. UK buyers should compare the full cost including
+            delivery, taxes, possible import charges and whether the cigar is actually in stock.
+          </p>
+        </section>
+
+        <section>
+          <h2>Useful comparisons to make</h2>
+          <p>
+            Compare Cuban cigars against UK retail prices, premium singles against box prices, and budget cigars against
+            better-known brands. This makes it easier to decide whether you are saving money or simply buying cheaper tobacco.
+          </p>
+        </section>
+
+        <section>
+          <h2>Start with the highest-value pages</h2>
+          <p>
+            If you are comparing before buying, start with UK cigar prices, Cuban cigar prices, Cohiba prices and the best
+            cigar prices UK guide. These pages are built to send buyers toward the app for quicker checks.
+          </p>
+        </section>
+
+
         <div className="seoDownloadGrid">
           <div className="seoDownload">
             <img src="/cl.png" alt="Cigar Ledger app icon" />

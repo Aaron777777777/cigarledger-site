@@ -30,6 +30,31 @@ export default function Page() {
 
         <section><h2>Find better buying routes</h2><p>Use the app as a quick check before your next cigar order so you can buy with more confidence.</p></section>
 
+        <section>
+          <h2>What a cigar price checker should include</h2>
+          <p>
+            A useful cigar price checker should help you look beyond the first price you see. UK buyers need to think about
+            retailer price, availability, delivery, duty, VAT and whether an import route still saves money after everything is included.
+          </p>
+        </section>
+
+        <section>
+          <h2>Check premium cigars before spending</h2>
+          <p>
+            Price checking matters most on premium cigars, Cuban cigars and larger box purchases. A small difference on each cigar
+            can add up quickly, especially when comparing Cohiba, Montecristo, Partagas, Davidoff and other popular brands.
+          </p>
+        </section>
+
+        <section>
+          <h2>Turn research into a quick buying check</h2>
+          <p>
+            Use this page for search, then use Cigar Ledger when you are close to ordering. The app is built to make the final
+            comparison faster so you can buy with more confidence.
+          </p>
+        </section>
+
+
         <div className="seoDownloadGrid">
           <div className="seoDownload">
             <img src="/cl.png" alt="Cigar Ledger app icon" />

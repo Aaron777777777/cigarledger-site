@@ -60,6 +60,39 @@ export default function Page() {
           </div>
         </div>
         </div>
+      
+        <section>
+          <h2>Why cigar price comparison uk matters</h2>
+          <p>
+            Cigar prices are not fixed from one shop to another. A cigar can look expensive in one place and reasonable
+            somewhere else depending on stock, retailer margin, pack size, delivery charges and import costs.
+          </p>
+        </section>
+
+        <section>
+          <h2>Do not compare sticker price only</h2>
+          <p>
+            The listed price is only part of the picture. UK buyers should also consider postage, duty, VAT, handling fees
+            and whether the retailer has the cigar in stock. Cigar Ledger is built to make that comparison quicker.
+          </p>
+        </section>
+
+        <section>
+          <h2>Best pages to check next</h2>
+          <p>
+            Start with Cuban cigar prices, Cohiba prices, cheap cigars UK and best cigar prices UK. These pages cover
+            the highest-intent searches and connect back to the app for quicker checking before you buy.
+          </p>
+        </section>
+
+        <div className="relatedLinks">
+          <a href="/cigars">All Cigars UK</a>
+          <a href="/cuban-cigar-prices-uk">Cuban Cigar Prices UK</a>
+          <a href="/cohiba-prices-uk">Cohiba Prices UK</a>
+          <a href="/cheap-cigars-uk">Cheap Cigars UK</a>
+          <a href="/best-cigar-prices-uk">Best Cigar Prices UK</a>
+        </div>
+
       </section>
     </main>
   );

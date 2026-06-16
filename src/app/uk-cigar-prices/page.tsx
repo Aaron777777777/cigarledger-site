@@ -30,6 +30,31 @@ export default function Page() {
 
         <section><h2>Find better buying routes</h2><p>Use the app as a quick check before your next cigar order so you can buy with more confidence.</p></section>
 
+        <section>
+          <h2>What affects UK cigar prices?</h2>
+          <p>
+            UK cigar prices are shaped by brand demand, cigar size, retailer stock, box age, duty, VAT and delivery costs.
+            Premium Cuban cigars such as Cohiba, Montecristo and Partagas can move quickly when availability changes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Compare singles, packs and boxes</h2>
+          <p>
+            A single cigar may look expensive compared with a box price, but a box can tie up much more money. Cigar Ledger
+            helps you compare options properly so you can decide whether a single, small pack or full box offers better value.
+          </p>
+        </section>
+
+        <section>
+          <h2>Use the app as your price check</h2>
+          <p>
+            Before ordering, compare the UK price against alternative buying routes and estimated landed costs. That quick
+            check can help you avoid overpaying and spot when a deal is actually worth taking.
+          </p>
+        </section>
+
+
         <div className="seoDownloadGrid">
           <div className="seoDownload">
             <img src="/cl.png" alt="Cigar Ledger app icon" />
