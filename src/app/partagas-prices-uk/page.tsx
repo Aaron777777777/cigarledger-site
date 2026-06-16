@@ -60,6 +60,33 @@ export default function Page() {
           </div>
         </div>
         </div>
+
+        <section>
+          <h2>What affects prices?</h2>
+          <p>
+            Prices can vary because of retailer stock, cigar size, availability,
+            shipping costs and overall market demand. Comparing before buying helps
+            avoid paying more than necessary.
+          </p>
+        </section>
+
+        <section>
+          <h2>Compare before ordering</h2>
+          <p>
+            Looking at the listed price alone is rarely enough. UK buyers should
+            also consider delivery costs, import charges and overall landed cost
+            before deciding where to buy.
+          </p>
+        </section>
+
+        <section>
+          <h2>Use Cigar Ledger</h2>
+          <p>
+            Cigar Ledger helps compare UK prices, buying routes and estimated
+            landed costs so you can make a more informed purchase decision.
+          </p>
+        </section>
+
       </section>
     </main>
   );
