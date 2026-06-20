@@ -30,11 +30,6 @@ export default function Page() {
           the best final deal.
         </p>
 
-        <p>
-          Cigar Ledger helps UK cigar smokers compare buying routes, check estimated landed costs
-          and avoid overpaying when looking at Cuban cigars online.
-        </p>
-
         <section>
           <h2>Why Bolivar prices vary</h2>
           <p>
