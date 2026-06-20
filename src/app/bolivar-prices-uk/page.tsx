@@ -51,6 +51,30 @@ export default function Page() {
           </p>
         </section>
 
+
+        <div className="seoDownloadGrid">
+          <div className="seoDownload">
+            <img src="/cl.png" alt="Cigar Ledger app icon" />
+            <div>
+              <strong>Download Cigar Ledger</strong>
+              <span>Compare UK cigar prices and landed costs before you buy.</span>
+              <a className="button" href="https://play.google.com/store/apps/details?id=com.aaronsapps.cigarledger" target="_blank" rel="noopener">Download on Android</a>
+            </div>
+          </div>
+
+          <div className="seoDownload">
+            <img src="/hs.png" alt="Herf Station app icon" />
+            <div>
+              <strong>Herf Station</strong>
+              <span>Found your cigar? Join live cigar lounges with other smokers.</span>
+              <div className="links">
+                <a className="button" href="https://play.google.com/store/apps/details?id=com.vantalabs.herf_station" target="_blank" rel="noopener">Android</a>
+                <a className="button" href="https://apps.apple.com/app/herf-station-cigar-lounge/id6771880305" target="_blank" rel="noopener">iOS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="relatedLinks">
           <a href="/cuban-cigar-prices-uk">Cuban Cigar Prices UK</a>
           <a href="/cohiba-prices-uk">Cohiba Prices UK</a>
