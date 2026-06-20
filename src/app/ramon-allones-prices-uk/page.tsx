@@ -52,6 +52,31 @@ export default function Page() {
         </section>
 
 
+
+        <section>
+          <h2>Singles, boxes and availability</h2>
+          <p>
+            Prices can look very different depending on whether you are buying a single cigar, a small pack or a full box.
+            Availability also matters: when stock is limited, UK prices can rise quickly and overseas options may look tempting.
+          </p>
+        </section>
+
+        <section>
+          <h2>When importing may not save money</h2>
+          <p>
+            Importing can seem cheaper at first, but duty, VAT, delivery and handling charges can remove the saving.
+            The real question is not just where the cigar is cheapest, but where the final cost makes the most sense.
+          </p>
+        </section>
+
+        <section>
+          <h2>Compare with similar Cuban brands</h2>
+          <p>
+            It is worth checking similar Cuban brands before buying. Compare against Cohiba, Montecristo, Partagas,
+            H. Upmann and other Cuban cigar price pages to see whether you are paying for value, scarcity or brand demand.
+          </p>
+        </section>
+
         <div className="seoDownloadGrid">
           <div className="seoDownload">
             <img src="/cl.png" alt="Cigar Ledger app icon" />
