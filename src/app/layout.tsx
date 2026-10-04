@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   icons: {
     icon: "/cl.png",
     shortcut: "/cl.png",
